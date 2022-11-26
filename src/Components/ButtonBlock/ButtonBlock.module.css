@@ -1,0 +1,54 @@
+.buttonBlock {
+    padding-top: 16px;
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supportButton {
+    width: 131px;
+    height: 43px;
+}
+
+.regularDonationButton {
+    width: 180px;
+    height: 43px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+.buttonBlock {
+        padding-top: 24px;
+        padding-left: 168px;
+        padding-right: 168px;
+    }
+.supportButton {
+    width: 141px;
+    height: 48px;
+}
+
+.regularDonationButton {
+    width: 196px;
+    height: 48px;
+}
+
+}
+
+@media screen and (min-width:1920px) {
+.buttonBlock {
+        padding-top: 28px;
+        padding-left: 586px;
+        padding-right: 586px;
+    }
+.supportButton {
+    width: 167px;
+    height: 51px;
+}
+
+.regularDonationButton {
+    width: 229px;
+    height: 51px;
+}
+}

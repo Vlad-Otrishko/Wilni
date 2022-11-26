@@ -1,0 +1,25 @@
+.selectorLabel{
+    display:flex;
+    align-items:center;
+    width:75px;
+    height:32px;
+}
+.languageSelect{
+    /* appearance:none; */
+    cursor:pointer;
+        font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+            font-weight:400;
+            line-height: calc(32/18);
+            border:none;
+            background-color: transparent;
+}
+.selectorIcon{
+    width:24px;
+    height:24px;
+}
+.option{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height:calc(32/18);
+}

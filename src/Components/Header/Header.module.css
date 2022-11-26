@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    align-items:center;
+    background-color: var(--background);
+}
+.headerQuickDonation{
+    margin-left:37px;
+    width: 139px;
+    height: 35px;
+}
+
+@media screen and (max-width:1919px){
+.headerLogo {
+        margin-left: 32px;
+    }
+}
+@media screen and (max-width:767px){
+.header {
+        padding-top: 12px;
+        padding-left: 11px;
+        padding-right: 15px;
+        padding-bottom: 12px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1919px) {
+    .header {
+        padding-top: 12px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 12px;
+        }
+    .headerQuickDonation {
+        margin-left: 353px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+.header {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+.headerLogo {
+    margin-right: 382px;
+}
+}

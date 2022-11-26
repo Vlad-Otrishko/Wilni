@@ -1,0 +1,123 @@
+.hero {
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+}
+
+.heroTitle {
+    padding-left: 32px;
+    padding-right: 33px;
+    text-align: center;
+}
+
+.heroText {
+    padding-top: 16px;
+    white-space: pre-line;
+}
+
+.intro {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.heroCentralPartWrapper {
+    padding-top: 16px;
+}
+.heroCentralPartElement {
+    box-sizing: border-box;
+}
+
+.heroCentralPartElement:last-child {
+    padding: 16px;
+    color:var(--white);
+    background-color: var(--children);
+}
+
+@media screen and (max-width:767px) {
+    .heroTitle {
+        white-space: pre-line;
+    }
+.heroCentralPartElement:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+}
+
+
+@media screen and (min-width:768px) {
+    .heroCentralPartWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroCentralPartElement {
+        flex-basis: 50%;
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+    .hero {
+        padding-top: 20px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+        line-height: calc(47.42/32);
+    }
+    .heroCentralPartElement {
+        height: 234px;
+    }
+    .heroCentralPartElement:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        }
+    .heroCentralPartElement:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .hero {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
+
+    .heroText {
+        padding-top: 32px;
+        padding-left: 272px;
+        padding-right: 272px;
+        letter-spacing: -0.02em;
+    }
+
+    .intro {
+        padding-left: 408px;
+        padding-right: 408px;
+        letter-spacing: 0.02em;
+    }
+
+    .heroCentralPartElement:first-child {
+        flex-basis: 784px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .heroCentralPartElement:last-child {
+        padding-top:32px;
+        padding-right:8px;
+        padding-bottom:32px;
+        padding-left:32px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

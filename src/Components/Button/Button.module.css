@@ -1,0 +1,88 @@
+
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-image: linear-gradient(var(--gradient));
+    border-radius:8px;
+}
+.wrapper:hover, .wrapper:focus {
+    background-image: none;
+    background-color: var(--black);
+}
+
+.wrapper:hover .typeTwoLink::after,
+.wrapper:focus .typeTwoLink::after{
+ background-image: linear-gradient(var(--black) 0%, var(--black) 100%);
+}
+/* .quickDonationLink */
+.typeOneLink {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(var(--gradient));
+    color:var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size:14px;
+    font-weight:500;
+    line-height: calc(21/14);
+    letter-spacing: 1px;
+    border-radius:8px;
+}
+.typeOneLink:hover,.typeOneLink:focus {
+background-image: none;
+background-color: var(--red-light);
+}
+
+.typeTwoLink{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--white);
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(19/14);
+    letter-spacing: 1px;
+    -webkit-text-fill-color: transparent;
+    border-radius: 8px;
+} 
+.typeTwoLink::after {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    content: attr(data-content);
+    background-image: linear-gradient(var(--gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    }
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+    .typeOneLink, .typeTwoLink{
+        font-size: 16px;
+        line-height: calc(24/16);
+        letter-spacing: 0.01em;
+    }
+    .typeOneLink{
+        width:176px;
+        height:48px;
+    }
+}
+@media screen and (min-width:1920px){
+    .typeOneLink {
+        width: 207px;
+        height: 51px;
+        font-size: 18px;
+        line-height: calc(27/18);
+    }
+.typeTwoLink{
+        font-size: 18px;
+        line-height: calc(27/18);
+    }
+}

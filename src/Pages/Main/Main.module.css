@@ -1,0 +1,386 @@
+.main{
+    padding-bottom:24px;
+    background-color: var(--white);
+}
+/* .navigationList{
+    display:flex;
+}
+.frame{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:330px;
+    height:160px;
+    background-position: 50% 50%;
+    border-radius: 8px;
+}
+
+.trooper{
+    background-image: 
+    linear-gradient(rgba(67, 122, 47, 0.4),rgba(67, 122, 47, 0.4)),
+    url(./pictures/trooper.jpg);
+    background-size: cover;
+}
+.girl{
+    background-image:
+     linear-gradient(rgba(157, 94, 104, 0.5),rgba(157, 94, 104, 0.5)),
+    url(./pictures/girl.jpg);
+    background-size: cover;
+}
+.drone {
+    background-image:
+     linear-gradient(rgba(71, 112, 147, 0.4),rgba(71, 112, 147, 0.4)),
+    url(./pictures/drone.jpg);
+    background-size: cover;
+}
+.otherPageLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:95%;
+    height:95%;
+    backdrop-filter: blur(1.7px);
+}
+.navigationTextBlock{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:var(--white);
+} */
+
+.chrono{
+    position:relative;
+    padding-top:24px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.chronoFrame{
+    display:block;
+    width: 330px;
+    height: 200px;
+}
+.galleryImage{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 8px;
+}
+
+.chronoDate {
+    color: var(--grey);
+}
+.chronoText{
+    margin-top:8px;
+    text-align:justify;
+}
+.chronoPagination{
+    font-family:'Oswald';
+    font-size:16px;
+    line-height:calc(24/16);
+    letter-spacing: 0.02em;
+    color:var(--red-dark);
+}
+.paginationBar{
+    text-align:center;
+    color:var(--grey);
+}
+
+.hero{
+    padding-top: 42px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+.heroImage{
+    width:100%;
+    /* height:auto; */
+}
+.heroText{
+    margin-top:16px;
+}
+.accentedText{
+    color:var(--red-dark);
+}
+.heroList{
+    margin-top:9px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.heroListItem{
+    position:relative;
+    padding-left:16px;
+    }
+.heroListItem::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:8px;
+    height:8px;
+    transform: translate(0, 100%);
+    background-color: var(--red-dark);
+    border-radius:50%;
+}
+
+.heroListItem:not(:first-child){
+    margin-top: 4px;    
+}
+.mainShowMore{
+    width:156px;
+    height:43px;
+}
+.bannersList{
+display:flex;
+flex-wrap:wrap;
+padding-top:24px;
+}
+.banner{
+    position:relative;
+    flex-basis:50%;
+    height:230px;
+}
+.bannerImage{
+    width:100%;
+    max-height:100%;
+    object-fit: cover;
+}
+.bannerTextBlock{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left:0;
+   
+    background-color: rgba(21, 35, 25, 0.5);
+    color:var(--white);
+}
+.bannerTitle{
+    font-family: 'Oswald', sans-serif;
+    font-size:32px;
+    font-weight:500;
+    line-height: calc(47/32);
+    letter-spacing: 1%;
+    text-align:center;
+}
+.titleSecondLine{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24/16);
+    }
+.bannerText{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align:center;
+}
+
+@media screen and (max-width:1919px){
+.chronoTitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: calc(30/20);
+        letter-spacing:0.01em;
+    }
+    .heroTitle {
+        text-align: center;
+    }
+}
+@media screen and (max-width:767px){
+    /* .navigationList{
+        flex-direction: column;
+        align-items:center;
+        padding-top:16px;
+    }
+    .frame {
+    height: 160px;
+    }
+    .frame:not(:first-child){
+        margin-top:16px;
+    }
+.textPositioning {
+    padding-left: 42px;
+    padding-right: 42px;
+    text-align: center;
+} */
+
+.chronoTextBlock {
+    padding-top: 8px;
+}
+
+.heroImageFrame {
+    margin-top: 16px;
+}
+.mainShowMore {
+margin: 16px auto;
+}
+
+}
+@media screen and (min-width:768px) {
+    .chronoFrame::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, rgba(47, 47, 47, 0.85) 0%, rgba(47, 47, 47, 0) 100%);
+        border-radius: 8px;
+    }
+
+    .chronoTextBlock {
+        position: absolute;
+        color: var(--white);
+    }
+    .banner {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1919px){
+    /* illustrated links to other pages */
+    /* .navigationList {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 24px;
+        padding-left:32px;
+        padding-right:32px;
+
+    }
+    .frame {
+        flex-basis:calc((100% - 32px)/3);
+        text-align:center;
+        height:110px;
+    }
+    .frame:not(:last-child){
+        margin-right:16px;
+    }
+    .linkTitle{
+        font-size:18px;
+        line-height: calc(27/18);
+        letter-spacing: 1%;
+    }
+    .textPositioning {
+        padding-left: 17px;
+        padding-right: 17px;
+        text-align: center;
+    } */
+            /* chronology block     */
+    .chrono {
+        padding-top: 20px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .chronoFrame {
+        position:relative;
+        width: 100%;
+        height: 335px;
+    }
+    .chronoTextBlock {
+        top: 143px;
+        left: 112px;
+        width: 464px;
+        height: 196px;
+    }
+    .chronoTitle {
+        padding-right: 32px;
+    }
+    .hero {
+        padding-top: calc(24px - var(--paginationPadding));
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .mainShowMore {
+        margin-top:20px;
+        width: 148px;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width:1920px){
+    /* .frame {
+            flex-basis: calc((100% - 64px)/3);
+            text-align: center;
+            height: 250px;
+            border-radius: 20px;
+        }
+        .frame:not(:last-child) {
+            margin-right: 32px;
+        }
+        .navigationList {
+            padding-top: 32px;
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+        .otherPageLink {
+            backdrop-filter: blur(3px);
+        }
+        .lineBreak{
+            display:none;
+        } */
+        .chrono {
+            padding-top: 32px;
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+
+        .chronoFrame {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+        .chronoTextBlock {
+            top: 250px;
+            left: 294px;
+            width: 784px;
+            height: 242px;
+        }
+        .chronoDate {
+            font-size:18px;
+            line-height:calc(32/18);
+            letter-spacing:-.02em;
+        }    
+    .chronoTitle {
+            padding-right: 62px;
+        }
+    .chronoText{
+        letter-spacing: -0.02em;
+        }
+    .chronoPagination {
+        font-size: 20px;
+        line-height: calc(32/16);
+    }
+    .hero {
+        position:relative;
+        padding-top: calc(60px - var(--paginationPadding));
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    .heroImageFrame{
+        width:784px;
+        height:503px;
+        position:absolute;
+        top:60px;
+        right:160px;
+        border-radius:8px;
+    }
+    .heroImage {
+        height:100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius:8px;
+    }
+    .heroTextBlock{
+        margin-right:32px;
+        width:784px;
+    }
+    .mainShowMore {
+        margin-top: 32px;
+        width: 175px;
+        height: 51px;
+    }
+    .bannersList {
+        padding-top: 60px;
+    }
+}

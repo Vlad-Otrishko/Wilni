@@ -1,0 +1,212 @@
+.bannerLinksTitle{
+    padding-top:24px;
+    font-size: 28px;
+    line-height:calc(41/28);
+    font-weight: 400;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.navigationList {
+    display: flex;
+}
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-position: 50% 50%;
+    border-radius: 8px;
+}
+
+.trooper {
+    background-image:
+        linear-gradient(rgba(67, 122, 47, 0.4), rgba(67, 122, 47, 0.4)),
+        url(./pictures/trooper.jpg);
+    background-size: cover;
+}
+
+.girl {
+    background-image:
+        linear-gradient(rgba(157, 94, 104, 0.5), rgba(157, 94, 104, 0.5)),
+        url(./pictures/girl.jpg);
+    background-size: cover;
+}
+
+.drone {
+    background-image:
+        linear-gradient(rgba(71, 112, 147, 0.4), rgba(71, 112, 147, 0.4)),
+        url(./pictures/drone.jpg);
+    background-size: cover;
+}
+
+.otherPageLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    backdrop-filter: blur(1.7px);
+}
+
+.navigationTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+.responsiblePersons {
+    color:var(--black);
+    font-family: 'Raleway', sans-serif;
+    }
+.responsiblePersonDetailsItem:nth-child(2){
+    margin-top:4px;
+}
+.personName{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+@media screen and (max-width:767px) {
+    .navigationList {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 16px;
+    }
+
+    /* .frame {
+        height: 160px;
+    } */
+    .navigationItem{
+        width:100%;
+    }
+
+    .navigationItem:not(:first-child) {
+        margin-top: 16px;
+    }
+    .navigationItem__about:not(:first-child) {
+            margin-top: 24px;
+        }
+
+    .textPositioning {
+        padding-left: 42px;
+        padding-right: 42px;
+        text-align: center;
+    }
+    .responsiblePersons {
+        margin-top: 12px;
+        align-self: flex-start;
+    }
+    .responsiblePerson:not(:first-child) {
+        margin-top: 8px;
+    }
+}
+@media screen and (min-width:768px) {
+    .bannerLinksTitle {
+            white-space: nowrap;
+        }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+
+    /* illustrated links to other pages */
+    .bannerLinksTitle{
+        font-size:32px;
+        line-height: calc(47/32);
+    }
+    .navigationList {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 24px;
+    }
+    .navigationList__main{
+        padding-left: 32px;
+        padding-right: 32px;
+        }
+    .navigationList__about {
+        padding-top: 16px;
+    }
+    .navigationItem{
+        flex-basis: calc((100% - 32px)/3);
+        text-align: center;
+    }
+    .navigationItem:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    .frame {
+        height: 110px;
+    }
+
+
+    .linkTitle {
+        font-size: 18px;
+        line-height: calc(27/18);
+        letter-spacing: 1%;
+    }
+
+    .textPositioning {
+        padding-left: 17px;
+        padding-right: 17px;
+        text-align: center;
+    }
+    .responsiblePersons {
+        margin-top: 16px;
+        text-align: left;
+    }
+
+    .responsiblePerson:not(:first-child) {
+        margin-top: 12px;
+    }
+
+}
+@media screen and (min-width:1920px) {
+    .bannerLinksTitle {
+            font-size: 48px;
+            line-height: calc(71/48);
+        }
+    .frame {
+        text-align: center;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+
+    .navigationList {
+        padding-top: 32px;
+    }
+    .navigationList__main {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    .navigationItem{
+        flex-basis: calc((100% - 64px)/3);
+    }
+    .navigationItem:not(:last-child) {
+        margin-right: 32px;
+    }
+    .otherPageLink {
+        backdrop-filter: blur(3px);
+    }
+
+    .lineBreak {
+        display: none;
+    }
+    .responsiblePersons {
+        margin-top: 24px;
+        display:flex;
+    }
+    .responsiblePerson:first-child{
+        padding-right:36px;
+    }
+    .responsiblePerson:not(:first-child){
+        flex-basis:240px;
+        padding-left:35px;
+        box-shadow: -1px 0px 0px 0px var(--grey);
+    }
+
+    .responsiblePersonDetailsItem:nth-child(2) {
+        margin-top: 8px;
+    }
+}

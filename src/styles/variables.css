@@ -1,0 +1,23 @@
+:root{
+    /* colors */
+    --background:rgba(47, 47, 47,0.08);
+    --black:#2F2F2F;
+    --black-bottom: #1E1E1E;
+    --white:#FFFFFF;
+    --grey:#bdbdbd;
+    --children:rgba(157, 94, 104, 0.3);
+    --army:#6F8C65;
+    --black_footer:#1E1E1E;
+    --orange:#ED8000;
+    --orange-hover:#F99A2C;
+    --aero:rgb(72, 113, 148, 0.5);
+    --gradient: #E52D27 0%, #B31217 100%;
+    --red-dark:#B31217;
+    --red-light:#E72F29;
+
+/*paddings*/
+    --paginationPadding: 7px;
+
+    
+
+}

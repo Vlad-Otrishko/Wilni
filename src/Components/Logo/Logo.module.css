@@ -1,0 +1,20 @@
+.logotype{
+    width:94.42px;
+    height:46px;
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+    .logotype {
+        width: 115px;
+        height: 56px;
+    }
+}
+
+
+@media screen and (min-width:1920px){
+.logotype {
+    width: 156px;
+    height: 76px;
+    /* margin-right:382px; */
+    }
+}

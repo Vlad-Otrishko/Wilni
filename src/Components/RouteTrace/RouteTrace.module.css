@@ -1,0 +1,35 @@
+.routeTrace{
+    padding-top: 16px;
+}
+
+.routeString {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.routeStringItem {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.homeIcon,
+.delimiterIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.delimiterIcon {
+    margin-right: 4px;
+}
+
+.routeItemDescription {
+    color: var(--grey);
+}
+
+@media screen and (min-width:1920px) {
+.routeTrace {
+        padding-top: 24px;
+    }
+}
