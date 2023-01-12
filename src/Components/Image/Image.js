@@ -2,10 +2,14 @@
 import s from './Image.module.css';
 import { imagePaths } from './imagePaths.js';
 
-function Image({ folderName, section, imageIndex }) {
-  let path = imagePaths[folderName][section];
-  if (section === 'gallery') path = imagePaths[folderName][section][imageIndex];
-  // console.log('folderName=', folderName, 'section=', section, 'index=', imageIndex, path);
+function Image({ folderName, section, id, externalClass }) {
+  if (!imagePaths[folderName]) return null;
+  let path =
+    Array.isArray(imagePaths[folderName][section])
+      ? imagePaths[folderName][section].filter((el) => el.id === id)[0] //|| Object.keys(el).includes(id))[0]
+      : imagePaths[folderName][section];
+  // if (section === 'gallery') path = imagePaths[folderName][section][imageIndex];
+  // console.log('folderName=', folderName, 'section=', section,  'id=', id, path);
   if (!path) return null;
   return (
     <>
@@ -43,7 +47,7 @@ function Image({ folderName, section, imageIndex }) {
           />
           <img
             src={path.mob ? path.mob[0]:''}
-            className={s.heroPicture}
+            className={externalClass}
             alt="фото дрону у повітрі"
           />
         </picture>

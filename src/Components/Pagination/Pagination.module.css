@@ -1,0 +1,88 @@
+.paginationBlock{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 169px;
+    height:32px;
+}
+.paginationBlock>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 1px solid blue; */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.pageNumber {
+    width:32px;
+    height:32px;
+    font-family: 'Raleway';
+    font-size:15px;
+    line-height:calc(22/15);
+    /* background-color: aquamarine; */
+}
+
+.goBack,
+.goForward {
+    width: 24px;
+    height: 24px;
+    color: var(--red-dark);
+}
+.prevIcon,
+.nextIcon{
+    width:6px;
+    height:12px;
+}
+.paginationBlock>li:hover,
+.active {
+    color: var(--black);
+    background-color: var(--grey);
+}
+.disabled{
+    color:var(--grey);
+    pointer-events: none;
+}
+.galleryShowMore {
+    margin: 16px auto 0;
+    width: 169px;
+    height: 43px;
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+.paginationBlock {
+        width: 186px;
+        height: 34px;
+    }
+.pageNumber {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    line-height: calc(24/16);
+    }
+    .galleryShowMore {
+        margin: 20px auto 0;
+        width: 184px;
+        height: 48px;
+    }
+}
+@media screen and (min-width:1920px){
+.paginationBlock {
+        width: 193px;
+        height: 34px;
+    }
+
+    .pageNumber {
+        width: 34px;
+        height: 34px;
+        font-size: 20px;
+        line-height: calc(32/20);
+        letter-spacing: -0.02em;
+    }
+    .galleryShowMore {
+        margin: 32px auto 0;
+        width: 216px;
+        height: 51px;
+    }
+
+}

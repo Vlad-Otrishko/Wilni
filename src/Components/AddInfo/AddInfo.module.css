@@ -1,0 +1,92 @@
+.addInfoBody {
+    display:flex;
+    align-items: center;
+    margin-top:12px;
+    padding-left:28px;
+    padding-right:45px;
+    height: 24px;
+    color: var(--grey);
+}
+.issueTime, .shareArticleOptions{
+    display:flex;
+    align-items: center;
+}
+.issueTime{
+    flex-basis:138px;
+    padding-right:16px;
+    border-right: 1px solid var(--grey);
+}
+.time, .date{
+    display:flex;
+    align-items:baseline;
+}
+.date{
+    white-space: pre;
+}
+
+.shareArticleOptions{
+padding-left:16px;
+flex-basis: calc(100% - 138px);
+height:100%;
+gap:16px;
+}
+.shareOption{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis:calc((100% - 32px)/3);
+    height:100%;
+}
+
+.shareButton {
+
+    width:100%;
+    height:100%;
+    padding:0;
+    border:0;
+    color: inherit;
+    background-color: transparent;
+}
+.linkIcon {
+    width:100%;
+    height:100%;
+    fill:currentColor;
+}
+
+@media screen and (max-width:767px) {
+    .addInfoBody{
+    padding-left: 28px;
+    padding-right: 45px;
+    }
+}
+@media screen and (min-width:768){
+    .addInfoBody {
+            margin-top: 16px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1919px) {
+    .addInfoBody {
+        padding-left: 224px;
+        padding-right: 224px;
+        height:32px;
+        }
+}
+@media screen and (min-width:1920px) {
+    .addInfoBody {
+            padding-left: 612px;
+            padding-right: 612px;
+            height:32px;
+            font-size:20px;
+            line-height:calc(32/20);
+        }
+.issueTime {
+    flex-basis: 164px;
+    padding-right:32px;
+}
+.shareArticleOptions {
+    padding-left: 32px;
+    flex-basis: calc(100% - 164px);
+    height: 100%;
+    gap: 32px;
+}
+}

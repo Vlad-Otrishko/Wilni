@@ -3,14 +3,19 @@ import s from './About.module.css';
 import Image from '../../Components/Image';
 import ImageLegend from '../../Components/ImageLegend';
 import { content } from '../../Components/ImageLegend/content';
-// import { imagePaths } from '../../Components/Image/imagePaths';
-function HeroPictureBlock({ pageName }) {
-  const legendExists = content[pageName] && content[pageName].hero;
-  console.log(Image({ folderName:pageName, section:"hero"}));
-  return legendExists ? (
+
+
+function HeroPictureBlock({ pageName, section, id }) {
+  console.log(pageName, section, id);
+  const sectionContent = content[pageName][section];
+  const legend = sectionContent
+    ? sectionContent[id] || sectionContent
+    : null;
+  
+  return legend ? (
     <ul className={s.heroCentralPartWrapper + ' ' + 'reset-list'}>
       <li className={s.heroCentralPartElement}>
-        <Image folderName={pageName} section="hero" />
+        <Image folderName={pageName} section={section} id={id} />
       </li>
       <li
         className={
@@ -19,14 +24,15 @@ function HeroPictureBlock({ pageName }) {
           s[`heroCentralPartElement__${pageName}`]
         }
       >
-        <ImageLegend pageName={pageName} section="hero" />
+        <ImageLegend pageName={pageName} sectionContent={legend} />
       </li>
     </ul>
   ) : (
-    Image({ folderName:pageName, section:"hero"}) &&
-    <div className={s.singleImageFrame}>
-      <Image folderName={pageName} section="hero" />
-    </div>
+    Image({ folderName: pageName, section: section, id:id }) && (
+      <div className={s.singleImageFrame}>
+        <Image folderName={pageName} section={section} id={id} />
+      </div>
+    )
   );
 }
  

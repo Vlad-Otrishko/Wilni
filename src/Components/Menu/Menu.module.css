@@ -45,6 +45,11 @@
 .menuIcon {
     margin-top: 40px;
 }
+.buttonSpace{
+    margin-top: 40px;
+    width: 139px;
+    height: 35px;
+}
 .menuQuickDonation {
     margin-top: 40px;
     width: 139px;
@@ -69,12 +74,17 @@
     }
 .phoneRef {
     margin-right: 32px;
-    font-variant-numeric: proportional-nums;
 }
 .menuQuickDonation {
     margin-right: 32px;
+    width:207px;
+    height:51px;
 }
-
+.buttonSpace {
+    margin-right: 32px;
+    width:207px;
+    height:51px;
+}
 .menuLanguageSelect {
     margin-right: 32px;
 }

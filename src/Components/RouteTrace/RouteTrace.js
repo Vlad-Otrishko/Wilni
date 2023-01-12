@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Fragment } from 'react';
 import s from './RouteTrace.module.css';
 import iconPath from './icons/sprite.svg';
 import { nanoid } from 'nanoid';
@@ -6,27 +6,36 @@ import substitute from '../../Components/substitutionObject';
 
 
 
-function RouteTrace({location}) {
-  const array = location.pathname
-    .split('/')
-    .filter(Boolean)
-    .map((el) => substitute[el] || el);
+function RouteTrace({trackingPath}) {
+  const array = trackingPath.map((el) => substitute[el] || el);
+  // console.log(array);
 
     return (
       <section className={s.routeTrace}>
-        <ul className={s.routeString + ' ' + 'reset-list'}>
+        <div className={s.routeString}>
           <svg className={s.homeIcon}>
             <use href={iconPath + '#icon-home'}></use>
           </svg>
-          {array.map((el) => (
-            <li key={nanoid()} className={s.routeStringItem}>
+          {array.map((el, index) => (
+            <Fragment key={ nanoid()}>
               <svg className={s.delimiterIcon}>
                 <use href={iconPath + '#icon-delimiter'}></use>
               </svg>
-              <span className={s.routeItemDescription}>{el}</span>
-            </li>
+              {el.split(' ').map((item) => (
+                <span key={nanoid()}
+                  className={
+                    s.routeItemDescription + ' '+
+                    s[`${
+                      index === array.length - 1
+                        ? 'routeItemDescription__last'
+                        : ''
+                    }`]
+                  }
+                >{`${item} `}</span>
+              ))}
+            </Fragment>
           ))}
-        </ul>
+        </div>
       </section>
     );
 }

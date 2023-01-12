@@ -1,0 +1,285 @@
+.pageContainer{
+    padding-left:15px;
+    padding-right:15px;
+}
+.paymentForm{
+    margin-top: 24px;
+}
+.label{
+    display:block;
+    font-size: 14px;
+    line-height: calc(18/14);
+
+}
+.input, .textarea,.complexInput {
+    box-sizing: border-box;
+    margin-top:8px;
+    padding:12px;
+    width:100%;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: calc(24/16);
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+.input:focus, .input:active {
+outline:1px solid var(--black);
+border-color: var(--black);
+}
+.input:hover, .complexInput:hover{
+    border-color:rgba(179, 18, 23, 0.3);
+}
+/* input:invalid, .complexInput:invalid{
+    border-color:#EB5757
+} */
+.activeElement{
+    outline: 1px solid var(--black);
+}
+/* input:not(:placeholder-shown),
+textarea:not(:placeholder-shown), */
+.inputFilled {
+    border-color: hsl(108, 95%, 65%);
+}
+.input__invalid{
+    border-color:#EB5757
+}
+
+.label__invalid:after{
+    content:attr(data-attribute);
+    font-size:16px;
+    line-height:calc(24/16);
+   
+}
+.label__invalid{
+    position:relative;
+    color: #EB5757;
+}
+
+/* input:invalid{
+border-color: #EB5757
+} */
+.amountLabel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.paymentSystemButtonContainer {
+    display: flex;
+    margin-top:16px;
+    height:48px;
+    gap:16px;
+}
+.submitButtonContainer{
+    height:48px;
+}
+.paymentSystemButtonSpace{
+    height:100%;
+}
+.submitButtonSpace{
+    height:100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: calc(24/16);
+}
+.buttonIcon{
+    width:46px;
+    height:18px;
+}
+.separatingText{
+    position:relative;
+    margin-top:24px;
+    font-size: 14px;
+    line-height: calc(18/14);
+    text-align: center;
+}
+.separatingText::before{
+    content:'';
+    position:absolute;
+    width:78px;
+    height:1px;
+    top:50%;
+    left: 0px;
+    background-color: var(--grey);
+}
+.separatingText::after {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    top: 50%;
+    right: 0px;
+    background-color: var(--grey);
+}
+.cardNumberLabel{
+    margin-top:24px;
+}
+.inputWrapper{
+    margin-top:16px;
+    display:flex;
+    gap:16px;
+}
+.cardValidityLabel, .cardCodeLabel{
+    flex-basis:calc((100% - 16px)/2);
+}
+.complexInput{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+.dateElement{
+    display:inline;
+    width:32px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border:0;
+    border-radius:0;
+    outline:0;
+    }
+.dateElement:focus, .dateElement:active{
+    outline:0;
+} 
+
+.separatingSlash{
+    color:var(--grey);
+}
+
+.emailLabel{
+    margin-top:16px;
+}
+.commentLabel{
+    display:block;
+    margin-top:16px;
+}
+.submitButtonContainer{
+    margin-top:25px;
+}
+@media screen and  (max-width:1919px) {
+.paymentSystemButtonSpace {
+        width: calc((100% - 16px)/2);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+.pageContainer {
+        padding-left: 192px;
+        padding-right: 192px;
+    }
+.separatingText::before {
+    content: '';
+    width: 104px;
+}
+
+.separatingText::after {
+    content: '';
+    width: 104px;
+}
+    
+}
+
+@media screen and (min-width:1920px) {
+    .pageContainer {
+        padding-left: 704px;
+        padding-right: 704px;
+    }
+
+.paymentForm {
+    margin-top: 40px;
+}
+
+.label {
+    font-size: 18px;
+    line-height: calc(28/18);
+
+}
+
+.input,
+.textarea,
+.complexInput {
+    font-size: 20px;
+    line-height: calc(32/20);
+}
+
+.paymentSystemButtonContainer {
+    margin-top: 32px;
+    font-size: 21px;
+    line-height: calc(32/21);
+    font-weight: 500;
+    height: 56px;
+    gap: 32px;
+}
+
+.submitButtonContainer {
+    height: 48px;
+}
+
+.paymentSystemButtonSpace:first-child {
+    flex-basis: 302px;
+}
+.buttonIcon {
+    width: 61px;
+    height: 24px;
+}
+.paymentSystemButtonSpace:first-child .buttonIcon {
+    margin-left: 8px;
+}
+.paymentSystemButtonSpace:last-child {
+    flex-grow: 1 ;
+}
+.submitButtonSpace {
+    font-size: 21px;
+    line-height: calc(32/21);
+    font-weight: 700;
+}
+
+
+.separatingText {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: calc(28/18);
+    text-align: center;
+}
+
+.separatingText::before {
+    content: '';
+    width: 136px;
+}
+
+.separatingText::after {
+    content: '';
+    width: 136px;
+}
+
+.cardNumberLabel {
+    margin-top: 32px;
+}
+
+.inputWrapper {
+    margin-top: 20px;
+    gap: 32px;
+}
+
+.cardValidityLabel,
+.cardCodeLabel {
+    flex-basis: calc((100% - 32px)/2);
+}
+
+
+.dateElement {
+    width: 40px;
+}
+
+
+.emailLabel {
+    margin-top: 20px;
+}
+
+.commentLabel {
+    margin-top: 20px;
+}
+
+.submitButtonContainer {
+    margin-top: 32px;
+}
+}

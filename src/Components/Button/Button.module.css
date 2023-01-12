@@ -1,8 +1,12 @@
 
 .wrapper{
-    display:flex;
+    box-sizing: border-box;
+    /* display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: center; */
+    padding:2px;
+    width:100%;
+    height:100%;
     background-image: linear-gradient(var(--gradient));
     border-radius:8px;
 }
@@ -12,11 +16,13 @@
 }
 
 .wrapper:hover .typeTwoLink::after,
-.wrapper:focus .typeTwoLink::after{
+.wrapper:focus .typeTwoLink::after,
+.wrapper:hover .typeTwoButton::after,
+.wrapper:focus .typeTwoButton::after{
  background-image: linear-gradient(var(--black) 0%, var(--black) 100%);
 }
 /* .quickDonationLink */
-.typeOneLink {
+.typeOneLink, .typeOneButton {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -24,35 +30,43 @@
     height:100%;
     background-image: linear-gradient(var(--gradient));
     color:var(--white);
-    font-family: 'Oswald', sans-serif;
-    font-size:14px;
-    font-weight:500;
-    line-height: calc(21/14);
-    letter-spacing: 1px;
+    border:0;
     border-radius:8px;
 }
-.typeOneLink:hover,.typeOneLink:focus {
+.typeOneLink {
+    font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: calc(21/14);
+        letter-spacing: 1px;
+    }
+
+.typeOneLink:hover,.typeOneLink:focus,
+ .typeOneButton:hover,
+ .typeOneButton:focus{
 background-image: none;
 background-color: var(--red-light);
 }
 
-.typeTwoLink{
+.typeTwoLink, .typeTwoButton{
+    display:block;
     position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
+    padding:0;
+    border:0;
+    width: 100%;
+    height: 100%;
     background-color: var(--white);
     font-family: 'Oswald';
     font-size: 14px;
     font-weight: 500;
     line-height: calc(19/14);
     letter-spacing: 1px;
+    white-space: nowrap;
     -webkit-text-fill-color: transparent;
     border-radius: 8px;
 } 
-.typeTwoLink::after {
+.typeTwoLink::after,
+.typeTwoButton::after {
     position:absolute;
     top:50%;
     left:50%;
@@ -62,26 +76,46 @@ background-color: var(--red-light);
     -webkit-background-clip: text;
     background-clip: text;
     }
+    .paymentSystemButton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: #000000;
+    color:var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-size:21px;
+    font-weight:500;
+    line-height: calc(32/21);
+    border:0;
+    border-radius:8px;
+    cursor:pointer;
+    }
+
+
 
 @media screen and (min-width:768px) and (max-width:1919px) {
-    .typeOneLink, .typeTwoLink{
+    .typeOneLink, .typeTwoLink, .typeTwoButton{
         font-size: 16px;
         line-height: calc(24/16);
         letter-spacing: 0.01em;
     }
-    .typeOneLink{
+    /* .wrapper{
         width:176px;
         height:48px;
-    }
+    } */
 }
 @media screen and (min-width:1920px){
-    .typeOneLink {
+    /* .wrapper {
         width: 207px;
         height: 51px;
+    } */
+    .typeOneLink{
         font-size: 18px;
         line-height: calc(27/18);
     }
-.typeTwoLink{
+.typeTwoLink, .typeTwoButton{
         font-size: 18px;
         line-height: calc(27/18);
     }

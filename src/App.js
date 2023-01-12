@@ -5,12 +5,16 @@ import Modal from './Components/Modal';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Pages/Main';
-// import HelpArmy from './Pages/HelpArmy';
-// import HelpChildren from './Pages/HelpChildren';
-// import Aero from './Pages/Aero';
 import About from './Pages/About';
+import Donate from './Pages/Donate';
+import QuickDonation from './Pages/QuickDonation';
+import RegularDonation from './Pages/RegularDonation';
+import { Context } from './context';
+import MarkedList from 'Components/MarkedList';
+import TextModules from 'Components/TextModules';
+import Gallery from 'Components/Gallery';
 function App() {
-//Отслеживаем размер вьюпорта, и передаем компонентам как пропс.
+//Отслеживаем размер вьюпорта, и передаем в контекст-провайдер.
   const [viewPort, setViewPort] = useState(window.visualViewport.width);
   const resizeHandler = () => setViewPort(window.visualViewport.width);
   window.addEventListener('resize', resizeHandler);
@@ -26,55 +30,79 @@ function App() {
   function switchModal(value) {
     return setModalStatus(value);
   }
+  
 
   return (
     <>
-      <BrowserRouter>
-        {modalStatus === 'off' ? (
-          <>
-            <Header modalSwitch={switchModal} viewPort={viewPort} />
-            <main>
-              <Routes>
-                <Route path="/" element={<Main />} />
-                {/* <Route path='chronology' element={<Chronology/> }/> */}
-                <Route
-                  path="/helpArmy"
-                  element={<About picturePosition={[0, 'after']} />}
-                />
-                <Route
-                  path="/helpChildren"
-                  element={
-                    <About picturePosition={[0, 'after']} viewPort={viewPort} />
-                  }
-                />
-                <Route
-                  path="/aero"
-                  element={<About picturePosition={[0, 'after']} />}
-                />
-                <Route
-                  path="/about"
-                  element={<About picturePosition={[0, 'before']} />}
-                />
+      <Context.Provider value={viewPort}>
+        <BrowserRouter>
+          {modalStatus === 'off' ? (
+            <>
+              <Header
+                modalSwitch={switchModal}
+              />
+              <main>
+                <Routes>
+                  <Route path="/" element={<Main />} />
+                  {/* <Route path='chronology' element={<Chronology/> }/> */}
+                  <Route
+                    path="/helpArmy"
+                    element={<About picturePosition={[0, 'after']} />}
+                  />
+                  <Route
+                    path="/helpChildren"
+                    element={
+                      <About
+                        picturePosition={[0, 'after']}
+                        viewPort={viewPort}
+                      />
+                    }
+                  />
+                  <Route
+                    path="/aero"
+                    element={<About picturePosition={[0, 'after']} />}
+                  />
+                  <Route
+                    path="/about"
+                    element={<About picturePosition={[0, 'before']} />}
+                  />
 
-                <Route path="/news" element={<About />} />
-                {/* <Route path='article' element={<Article/> }/>
-        </Route>
-
-          <Route path='reports' element={<Reports/>}>
-            <Route path='documents' element={<Documents />} />
-            <Route path='photos' element={<Photos/>}/>
-        </Route>
-        <Route path='donate' element={<Donate />} />
-        <Route path='quick_donation' element={<QuickDonation />} />
-        <Route path='regular_donation' element={<RegularDonation/> }/> */}
-              </Routes>
-            </main>
-            <Footer />
-          </>
-        ) : (
-          <Modal modalStatus={modalStatus} modalSwitch={switchModal} />
-        )}
-      </BrowserRouter>
+                  <Route path="/news" element={<About />} />
+                  <Route
+                    path="/news/:articleId"
+                    element={<About picturePosition={[0, 'before']} />}
+                  />
+                  <Route path="/reports" element={<About />}>
+                    <Route
+                      path="documents"
+                      element={
+                        <MarkedList
+                          pageName="reports"
+                          data={TextModules('reports', 'list')}
+                        />
+                      }
+                    />
+                    <Route
+                      path="photos"
+                      element={<Gallery pageName="reports" section="photos" />}
+                    />
+                    <Route path="/reports/photos/:articleId" element={null} />
+                  </Route>
+                  <Route path="/donate/:bankChosen" element={<Donate />} />
+                  <Route path="/quick_donation" element={<QuickDonation />} />
+                  <Route path='/regular_donation' element={<RegularDonation/> }/>
+                </Routes>
+              </main>
+              <Footer />
+            </>
+          ) : (
+            <Modal
+              modalStatus={modalStatus}
+              modalSwitch={switchModal}
+            />
+          )}
+        </BrowserRouter>
+      </Context.Provider>
     </>
   );
 }

@@ -1,0 +1,482 @@
+.invisible{
+    visibility:hidden;
+    width:0;
+    height:0;
+    pointer-events: none;
+}
+
+.underlay{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    z-index: -1;
+    }
+
+.pageContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.paymentForm {
+    margin-top: 24px;
+}
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight:500;
+    line-height: calc(18/14);
+}
+.input,
+.complexInput {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: calc(24/16);
+    background-color: transparent;
+    border: 0;
+    outline:0;
+    border-bottom: 1px solid var(--grey);
+
+}
+.input {
+    margin-top: 4px;
+    padding: 0;
+    padding-bottom: 4px;
+}
+.complexInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input:focus,
+.input:active {
+box-shadow: 0 4px 2px -2px var(--black);
+}
+
+.input:hover,
+.complexInput:hover {
+    border-color: rgba(179, 18, 23, 0.3);
+}
+
+
+.activeElement{
+box-shadow: 0 4px 2px -2px gray;
+/* box-shadow: 0 1px 0 var(--black); */
+}
+.dateElement, 
+.dateElement:hover,
+.dateElement:focus,
+.dateElement:active{
+    border:0;
+    outline:0;
+    box-shadow: none;
+}
+
+.inputFilled {
+    border-color: hsl(108, 95%, 65%);
+}
+
+.input__invalid {
+    border-color: #EB5757
+}
+
+.label__invalid:after {
+    content: attr(data-attribute);
+    width:100%;
+    font-size: 14px;
+    line-height: calc(18/14);
+
+}
+
+.label__invalid {
+    color: #EB5757;
+}
+
+.amountLabel {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3Cline x1='0%' x2='100%' y1='100%' y2='100%' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");;
+}
+.amountLabel>input{
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    line-height: calc(32/20);
+    font-weight:500;
+    border:0;
+
+    /* border-color:transparent; */
+}
+.amountButtonContainer{
+    margin-top:16px;
+    height:48px;
+}
+.amountButtonSpace {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: calc(24/16);
+}
+.titleWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.cardBody{
+    background-color: var(--white);
+}
+.inputWrapper {
+    display: flex;
+}
+.cardValidityLabel,
+.cardCodeLabel {
+    flex-basis: calc((100% - 16px)/2);
+}
+
+.dateElement {
+    display: inline;
+    width: 32px;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+}
+
+.separatingSlash {
+    color: var(--grey);
+}
+.phoneLabel{
+    position:relative;
+}
+/* .phoneLabel::before{
+    content:'+380';
+    position:absolute;
+    left:0;
+    color: var(--grey);
+} */
+
+
+.radioInputLabel {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.radioInputLabel>input {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    outline: none;
+}
+
+.radioInputLabel>input::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid var(--grey);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radioInputLabel>input:hover::before,
+.radioInputLabel>input:checked::before {
+    border-color: #000000;
+}
+
+.radioInputLabel>input:checked::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+}
+
+.groupTitle{
+    font-weight:500;
+}
+.radioInputLabel {
+    font-weight: 400;
+}
+.remarkBlock {
+    display: flex;
+    column-gap: 8px;
+}
+
+.informationIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.informationText {
+    color: var(--grey);
+}
+
+
+@media screen and (max-width:1919px){
+.underlay{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(179, 18, 23, 0.05) 100%);
+    }
+.amountLabel {
+    justify-content: flex-start;
+    margin-top: 12px;
+    padding-bottom:16px;
+    gap:16px;
+}
+.titleWrapper{
+    margin-top:24px;
+    column-gap: 16px;
+}
+.visaLogo{
+    width:49.5px;
+    height:16px;
+    margin-left:24px;
+}
+.mastercardLogo{
+    width:26px;
+    height:16px;
+}
+.cardBody{
+    margin-top:16px;
+    padding: 24px 24px 32px 24px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 5.09px 12.73px rgba(0, 0, 0, 0.1);
+}
+.ownerNameLabel {
+    margin-top: 16px;
+}
+.inputWrapper {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+/* .phoneLabel>.input {
+    padding-left: 45px;
+} */
+
+/* .phoneLabel::before {
+    height: 24px;
+    width: 45px;
+    bottom: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: calc(24/16);
+
+} */
+
+.lowerInputsBlock {
+    margin-top:24px;
+}
+.lowerInputsBlock>label:not(:first-child){
+    margin-top:16px;
+}
+.radioInputsGroup{
+    margin-top:21px;
+}
+.radioInputsWrapper{
+    margin-top:8px;
+    display: flex;
+    column-gap: 62px;
+}
+.radioInputDescription{
+    font-size:16px;
+    line-height:calc(24/16);
+}
+.remarkBlock{
+    margin-top:24px;
+    padding-left:12px;
+    padding-right:12px;
+}
+.informationText{
+    flex-basis:calc(100% - 32px);
+}
+.submitButtonSpace{
+    margin-top: 25px;
+    height: 48px;
+    font-size: 16px;
+    line-height:calc(24/16);
+    font-weight:700;
+}
+}
+@media screen and (max-width:767px){
+
+.lowerInputsBlock {
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+.pageContainer {
+        padding-left: 192px;
+        padding-right: 192px;
+    }
+.lowerInputsBlock {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+.informationText {
+    padding-right:53px;
+}
+}
+
+@media screen and (min-width:1920px){
+.underlay {
+        background-image: linear-gradient(to left,rgba(179, 18, 23, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+.pageContainer {
+        padding-left: 296px;
+        padding-right: 296px;
+    }
+.paymentForm{
+    display:flex;
+    column-gap: 168px;
+}
+.input,
+.complexInput {
+    font-size: 18px;
+    line-height: calc(28/18);
+}
+.input {
+    margin-top: 8px;
+    padding:0;
+    padding-bottom: 8px;
+}
+.label {
+    font-size: 18px;
+    line-height: calc(28/18);
+}
+
+.firstPaymentBlock{
+    margin-top:108px;
+    flex-basis: 512px;
+}
+.secondPaymentBlock{
+    margin-top: 40px;
+    flex-basis: calc(100% - 512px - 168px);
+}
+.amountButtonContainer{
+    margin-top: 32px;
+    padding-right: 136px;
+
+}
+.amountLabel {
+    margin-top: 21px;
+    padding-bottom: 32px;
+    gap: 144px;
+}
+.titleWrapper {
+    margin-top: 40px;
+    column-gap: 24px;
+}
+
+.visaLogo {
+    width: 62px;
+    height: 20px;
+    margin-left: 269px;
+}
+
+.mastercardLogo {
+    width: 32px;
+    height: 20px;
+}
+
+.cardBody{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:32px;
+    max-height:304px;
+    margin-top:32px;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+.cardNumberLabel, .ownerNameLabel {
+    width: calc(100% - 32px - 166px);
+}
+.inputWrapper{
+    /* align-self: flex-end; */
+    flex-direction: column;
+    max-width: 166px;
+    row-gap: 32px;
+    }
+
+/* .phoneLabel>.input {
+    padding-left: 50px;
+} */
+
+/* .phoneLabel::before {
+    height: 32px;
+    width: 45px;
+    bottom: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: calc(32/20);
+} */
+
+.lowerInputsBlock {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    }
+.lowerInputsBlock>*{
+    flex-basis: calc((100% - 32px)/2);
+}
+.radioInputLabel{
+    margin-top:4px;
+    gap:11px;
+    font-size: 20px;
+    line-height: calc(32/20);
+}
+.radioInputLabel:first-child{
+    margin-top:8px;
+}
+.remarkBlock {
+    margin-top: 32px;
+    padding-right:113px;
+}
+
+.informationText {
+    flex-basis: calc(100% - 32px);
+}
+.submitButtonSpace {
+    margin-top: 32px;
+    padding-left:136px;
+    padding-right: 136px;
+    height: 56px;
+    font-size: 21px;
+    line-height: calc(32/21);
+    font-weight: 700;
+}
+.label__invalid {
+    position: relative;
+}
+.label__invalid:after {
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    white-space: nowrap;
+
+}
+}

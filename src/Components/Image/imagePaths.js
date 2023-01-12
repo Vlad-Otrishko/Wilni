@@ -1,7 +1,7 @@
 export const imagePaths = {
   aero: {
-    hero: {
-      id:'aero01',
+    pageMainContent: {
+      id: 'aero01',
       mob: [
         require('../../pictures/aero/mobile/image.jpg'), //imagePathMobile
         require('../../pictures/aero/mobile/image2x.jpg'), //imagePathMobileRetina,
@@ -23,8 +23,8 @@ export const imagePaths = {
     },
   },
   helpArmy: {
-    hero: {
-      id:'helpArmy01',
+    pageMainContent: {
+      id: 'helpArmy01',
       mob: [
         require('../../pictures/helpArmy/mobile/image.jpg'),
         require('../../pictures/helpArmy/mobile/image2x.jpg'),
@@ -46,8 +46,8 @@ export const imagePaths = {
     },
   },
   helpChildren: {
-    hero: {
-      id:'helpChildren01',
+    pageMainContent: {
+      id: 'helpChildren01',
       mob: [
         require('../../pictures/helpChildren/mobile/image.jpg'),
         require('../../pictures/helpChildren/mobile/image2x.jpg'),
@@ -137,7 +137,7 @@ export const imagePaths = {
     ],
   },
   about: {
-    hero:{
+    pageMainContent: {
       id: 'about01',
       mob: [
         require('../../pictures/about/hero/mobile/image.jpg'),
@@ -159,13 +159,6 @@ export const imagePaths = {
       ],
     },
     gallery: [
-      // {
-      //   mob: [
-      //   ],
-      //   tab: [],
-      //   dsk: [],
-      // },
-
       {
         id: 'aboutGallery02',
         mob: [
@@ -192,7 +185,7 @@ export const imagePaths = {
   news: {
     gallery: [
       {
-        id: 'abcd01',
+        id: 'news01',
         mob: [
           require('../../pictures/news/gallery/1/mobile/image.jpg'),
           require('../../pictures/news/gallery/1/mobile/image2x.jpg'),
@@ -213,7 +206,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd02',
+        id: 'news02',
         mob: [
           require('../../pictures/news/gallery/2/mobile/image.jpg'),
           require('../../pictures/news/gallery/2/mobile/image2x.jpg'),
@@ -234,7 +227,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd03',
+        id: 'news03',
         mob: [
           require('../../pictures/news/gallery/3/mobile/image.jpg'),
           require('../../pictures/news/gallery/3/mobile/image2x.jpg'),
@@ -255,7 +248,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd04',
+        id: 'news04',
         mob: [
           require('../../pictures/news/gallery/4/mobile/image.jpg'),
           require('../../pictures/news/gallery/4/mobile/image2x.jpg'),
@@ -276,7 +269,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd05',
+        id: 'news05',
         mob: [
           require('../../pictures/news/gallery/5/mobile/image.jpg'),
           require('../../pictures/news/gallery/5/mobile/image2x.jpg'),
@@ -297,7 +290,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd06',
+        id: 'news06',
         mob: [
           require('../../pictures/news/gallery/6/mobile/image.jpg'),
           require('../../pictures/news/gallery/6/mobile/image2x.jpg'),
@@ -318,7 +311,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd07',
+        id: 'news07',
         mob: [
           require('../../pictures/news/gallery/7/mobile/image.jpg'),
           require('../../pictures/news/gallery/7/mobile/image2x.jpg'),
@@ -339,7 +332,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd08',
+        id: 'news08',
         mob: [
           require('../../pictures/news/gallery/8/mobile/image.jpg'),
           require('../../pictures/news/gallery/8/mobile/image2x.jpg'),
@@ -360,7 +353,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd09',
+        id: 'news09',
         mob: [
           require('../../pictures/news/gallery/9/mobile/image.jpg'),
           require('../../pictures/news/gallery/9/mobile/image2x.jpg'),
@@ -381,7 +374,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd10',
+        id: 'news10',
         mob: [
           require('../../pictures/news/gallery/10/mobile/image.jpg'),
           require('../../pictures/news/gallery/10/mobile/image2x.jpg'),
@@ -402,7 +395,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd11',
+        id: 'news11',
         mob: [
           require('../../pictures/news/gallery/11/mobile/image.jpg'),
           require('../../pictures/news/gallery/11/mobile/image2x.jpg'),
@@ -423,7 +416,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd12',
+        id: 'news12',
         mob: [
           require('../../pictures/news/gallery/12/mobile/image.jpg'),
           require('../../pictures/news/gallery/12/mobile/image2x.jpg'),
@@ -444,7 +437,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd13',
+        id: 'news13',
         mob: [
           require('../../pictures/news/gallery/13/mobile/image.jpg'),
           require('../../pictures/news/gallery/13/mobile/image2x.jpg'),
@@ -465,7 +458,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd14',
+        id: 'news14',
         mob: [
           require('../../pictures/news/gallery/14/mobile/image.jpg'),
           require('../../pictures/news/gallery/14/mobile/image2x.jpg'),
@@ -486,7 +479,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd15',
+        id: 'news15',
         mob: [
           require('../../pictures/news/gallery/15/mobile/image.jpg'),
           require('../../pictures/news/gallery/15/mobile/image2x.jpg'),
@@ -507,7 +500,7 @@ export const imagePaths = {
         ],
       },
       {
-        id: 'abcd16',
+        id: 'news16',
         mob: [
           require('../../pictures/news/gallery/16/mobile/image.jpg'),
           require('../../pictures/news/gallery/16/mobile/image2x.jpg'),
@@ -525,6 +518,2429 @@ export const imagePaths = {
           require('../../pictures/news/gallery/16/desktop/image2x.jpg'),
           require('../../pictures/news/gallery/16/desktop/image.webp'),
           require('../../pictures/news/gallery/16/desktop/image2x.webp'),
+        ],
+      },
+    ],
+    articles: [
+      {
+        id: 'news01',
+        mob: [
+          require('../../pictures/news/articles/1/mobile/image.jpg'),
+          require('../../pictures/news/articles/1/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/1/mobile/image.webp'),
+          require('../../pictures/news/articles/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/1/tablet/image.jpg'),
+          require('../../pictures/news/articles/1/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/1/tablet/image.webp'),
+          require('../../pictures/news/articles/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/1/desktop/image.jpg'),
+          require('../../pictures/news/articles/1/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/1/desktop/image.webp'),
+          require('../../pictures/news/articles/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news02',
+        mob: [
+          require('../../pictures/news/articles/2/mobile/image.jpg'),
+          require('../../pictures/news/articles/2/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/2/mobile/image.webp'),
+          require('../../pictures/news/articles/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/2/tablet/image.jpg'),
+          require('../../pictures/news/articles/2/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/2/tablet/image.webp'),
+          require('../../pictures/news/articles/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/2/desktop/image.jpg'),
+          require('../../pictures/news/articles/2/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/2/desktop/image.webp'),
+          require('../../pictures/news/articles/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news03',
+        mob: [
+          require('../../pictures/news/articles/3/mobile/image.jpg'),
+          require('../../pictures/news/articles/3/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/3/mobile/image.webp'),
+          require('../../pictures/news/articles/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/3/tablet/image.jpg'),
+          require('../../pictures/news/articles/3/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/3/tablet/image.webp'),
+          require('../../pictures/news/articles/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/3/desktop/image.jpg'),
+          require('../../pictures/news/articles/3/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/3/desktop/image.webp'),
+          require('../../pictures/news/articles/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news04',
+        mob: [
+          require('../../pictures/news/articles/4/mobile/image.jpg'),
+          require('../../pictures/news/articles/4/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/4/mobile/image.webp'),
+          require('../../pictures/news/articles/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/4/tablet/image.jpg'),
+          require('../../pictures/news/articles/4/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/4/tablet/image.webp'),
+          require('../../pictures/news/articles/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/4/desktop/image.jpg'),
+          require('../../pictures/news/articles/4/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/4/desktop/image.webp'),
+          require('../../pictures/news/articles/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news05',
+        mob: [
+          require('../../pictures/news/articles/5/mobile/image.jpg'),
+          require('../../pictures/news/articles/5/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/5/mobile/image.webp'),
+          require('../../pictures/news/articles/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/5/tablet/image.jpg'),
+          require('../../pictures/news/articles/5/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/5/tablet/image.webp'),
+          require('../../pictures/news/articles/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/5/desktop/image.jpg'),
+          require('../../pictures/news/articles/5/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/5/desktop/image.webp'),
+          require('../../pictures/news/articles/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news06',
+        mob: [
+          require('../../pictures/news/articles/6/mobile/image.jpg'),
+          require('../../pictures/news/articles/6/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/6/mobile/image.webp'),
+          require('../../pictures/news/articles/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/6/tablet/image.jpg'),
+          require('../../pictures/news/articles/6/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/6/tablet/image.webp'),
+          require('../../pictures/news/articles/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/6/desktop/image.jpg'),
+          require('../../pictures/news/articles/6/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/6/desktop/image.webp'),
+          require('../../pictures/news/articles/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news07',
+        mob: [
+          require('../../pictures/news/articles/7/mobile/image.jpg'),
+          require('../../pictures/news/articles/7/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/7/mobile/image.webp'),
+          require('../../pictures/news/articles/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/7/tablet/image.jpg'),
+          require('../../pictures/news/articles/7/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/7/tablet/image.webp'),
+          require('../../pictures/news/articles/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/7/desktop/image.jpg'),
+          require('../../pictures/news/articles/7/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/7/desktop/image.webp'),
+          require('../../pictures/news/articles/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news08',
+        mob: [
+          require('../../pictures/news/articles/8/mobile/image.jpg'),
+          require('../../pictures/news/articles/8/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/8/mobile/image.webp'),
+          require('../../pictures/news/articles/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/8/tablet/image.jpg'),
+          require('../../pictures/news/articles/8/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/8/tablet/image.webp'),
+          require('../../pictures/news/articles/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/8/desktop/image.jpg'),
+          require('../../pictures/news/articles/8/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/8/desktop/image.webp'),
+          require('../../pictures/news/articles/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news09',
+        mob: [
+          require('../../pictures/news/articles/9/mobile/image.jpg'),
+          require('../../pictures/news/articles/9/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/9/mobile/image.webp'),
+          require('../../pictures/news/articles/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/9/tablet/image.jpg'),
+          require('../../pictures/news/articles/9/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/9/tablet/image.webp'),
+          require('../../pictures/news/articles/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/9/desktop/image.jpg'),
+          require('../../pictures/news/articles/9/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/9/desktop/image.webp'),
+          require('../../pictures/news/articles/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news10',
+        mob: [
+          require('../../pictures/news/articles/10/mobile/image.jpg'),
+          require('../../pictures/news/articles/10/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/10/mobile/image.webp'),
+          require('../../pictures/news/articles/10/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/10/tablet/image.jpg'),
+          require('../../pictures/news/articles/10/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/10/tablet/image.webp'),
+          require('../../pictures/news/articles/10/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/10/desktop/image.jpg'),
+          require('../../pictures/news/articles/10/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/10/desktop/image.webp'),
+          require('../../pictures/news/articles/10/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news11',
+        mob: [
+          require('../../pictures/news/articles/11/mobile/image.jpg'),
+          require('../../pictures/news/articles/11/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/11/mobile/image.webp'),
+          require('../../pictures/news/articles/11/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/11/tablet/image.jpg'),
+          require('../../pictures/news/articles/11/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/11/tablet/image.webp'),
+          require('../../pictures/news/articles/11/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/11/desktop/image.jpg'),
+          require('../../pictures/news/articles/11/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/11/desktop/image.webp'),
+          require('../../pictures/news/articles/11/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news12',
+        mob: [
+          require('../../pictures/news/articles/12/mobile/image.jpg'),
+          require('../../pictures/news/articles/12/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/12/mobile/image.webp'),
+          require('../../pictures/news/articles/12/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/12/tablet/image.jpg'),
+          require('../../pictures/news/articles/12/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/12/tablet/image.webp'),
+          require('../../pictures/news/articles/12/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/12/desktop/image.jpg'),
+          require('../../pictures/news/articles/12/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/12/desktop/image.webp'),
+          require('../../pictures/news/articles/12/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news13',
+        mob: [
+          require('../../pictures/news/articles/13/mobile/image.jpg'),
+          require('../../pictures/news/articles/13/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/13/mobile/image.webp'),
+          require('../../pictures/news/articles/13/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/13/tablet/image.jpg'),
+          require('../../pictures/news/articles/13/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/13/tablet/image.webp'),
+          require('../../pictures/news/articles/13/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/13/desktop/image.jpg'),
+          require('../../pictures/news/articles/13/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/13/desktop/image.webp'),
+          require('../../pictures/news/articles/13/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news14',
+        mob: [
+          require('../../pictures/news/articles/14/mobile/image.jpg'),
+          require('../../pictures/news/articles/14/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/14/mobile/image.webp'),
+          require('../../pictures/news/articles/14/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/14/tablet/image.jpg'),
+          require('../../pictures/news/articles/14/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/14/tablet/image.webp'),
+          require('../../pictures/news/articles/14/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/14/desktop/image.jpg'),
+          require('../../pictures/news/articles/14/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/14/desktop/image.webp'),
+          require('../../pictures/news/articles/14/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news15',
+        mob: [
+          require('../../pictures/news/articles/15/mobile/image.jpg'),
+          require('../../pictures/news/articles/15/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/15/mobile/image.webp'),
+          require('../../pictures/news/articles/15/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/15/tablet/image.jpg'),
+          require('../../pictures/news/articles/15/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/15/tablet/image.webp'),
+          require('../../pictures/news/articles/15/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/15/desktop/image.jpg'),
+          require('../../pictures/news/articles/15/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/15/desktop/image.webp'),
+          require('../../pictures/news/articles/15/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'news16',
+        mob: [
+          require('../../pictures/news/articles/16/mobile/image.jpg'),
+          require('../../pictures/news/articles/16/mobile/image2x.jpg'),
+          require('../../pictures/news/articles/16/mobile/image.webp'),
+          require('../../pictures/news/articles/16/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/news/articles/16/tablet/image.jpg'),
+          require('../../pictures/news/articles/16/tablet/image2x.jpg'),
+          require('../../pictures/news/articles/16/tablet/image.webp'),
+          require('../../pictures/news/articles/16/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/news/articles/16/desktop/image.jpg'),
+          require('../../pictures/news/articles/16/desktop/image2x.jpg'),
+          require('../../pictures/news/articles/16/desktop/image.webp'),
+          require('../../pictures/news/articles/16/desktop/image2x.webp'),
+        ],
+      },
+    ],
+  },
+  reports: {
+    photos: [
+      {
+        id: 'report1',
+        mob: [
+          require('../../pictures/reports/photos/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2',
+        mob: [
+          require('../../pictures/reports/photos/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3',
+        mob: [
+          require('../../pictures/reports/photos/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4',
+        mob: [
+          require('../../pictures/reports/photos/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5',
+        mob: [
+          require('../../pictures/reports/photos/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6',
+        mob: [
+          require('../../pictures/reports/photos/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7',
+        mob: [
+          require('../../pictures/reports/photos/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8',
+        mob: [
+          require('../../pictures/reports/photos/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9',
+        mob: [
+          require('../../pictures/reports/photos/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report10',
+        mob: [
+          require('../../pictures/reports/photos/10/mobile/image.jpg'),
+          require('../../pictures/reports/photos/10/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/10/mobile/image.webp'),
+          require('../../pictures/reports/photos/10/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/10/tablet/image.jpg'),
+          require('../../pictures/reports/photos/10/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/10/tablet/image.webp'),
+          require('../../pictures/reports/photos/10/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/10/desktop/image.jpg'),
+          require('../../pictures/reports/photos/10/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/10/desktop/image.webp'),
+          require('../../pictures/reports/photos/10/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report11',
+        mob: [
+          require('../../pictures/reports/photos/11/mobile/image.jpg'),
+          require('../../pictures/reports/photos/11/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/11/mobile/image.webp'),
+          require('../../pictures/reports/photos/11/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/11/tablet/image.jpg'),
+          require('../../pictures/reports/photos/11/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/11/tablet/image.webp'),
+          require('../../pictures/reports/photos/11/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/11/desktop/image.jpg'),
+          require('../../pictures/reports/photos/11/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/11/desktop/image.webp'),
+          require('../../pictures/reports/photos/11/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report12',
+        mob: [
+          require('../../pictures/reports/photos/12/mobile/image.jpg'),
+          require('../../pictures/reports/photos/12/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/12/mobile/image.webp'),
+          require('../../pictures/reports/photos/12/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/12/tablet/image.jpg'),
+          require('../../pictures/reports/photos/12/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/12/tablet/image.webp'),
+          require('../../pictures/reports/photos/12/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/12/desktop/image.jpg'),
+          require('../../pictures/reports/photos/12/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/12/desktop/image.webp'),
+          require('../../pictures/reports/photos/12/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report13',
+        mob: [
+          require('../../pictures/reports/photos/13/mobile/image.jpg'),
+          require('../../pictures/reports/photos/13/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/13/mobile/image.webp'),
+          require('../../pictures/reports/photos/13/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/13/tablet/image.jpg'),
+          require('../../pictures/reports/photos/13/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/13/tablet/image.webp'),
+          require('../../pictures/reports/photos/13/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/13/desktop/image.jpg'),
+          require('../../pictures/reports/photos/13/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/13/desktop/image.webp'),
+          require('../../pictures/reports/photos/13/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report14',
+        mob: [
+          require('../../pictures/reports/photos/14/mobile/image.jpg'),
+          require('../../pictures/reports/photos/14/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/14/mobile/image.webp'),
+          require('../../pictures/reports/photos/14/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/14/tablet/image.jpg'),
+          require('../../pictures/reports/photos/14/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/14/tablet/image.webp'),
+          require('../../pictures/reports/photos/14/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/14/desktop/image.jpg'),
+          require('../../pictures/reports/photos/14/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/14/desktop/image.webp'),
+          require('../../pictures/reports/photos/14/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report15',
+        mob: [
+          require('../../pictures/reports/photos/15/mobile/image.jpg'),
+          require('../../pictures/reports/photos/15/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/15/mobile/image.webp'),
+          require('../../pictures/reports/photos/15/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/15/tablet/image.jpg'),
+          require('../../pictures/reports/photos/15/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/15/tablet/image.webp'),
+          require('../../pictures/reports/photos/15/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/15/desktop/image.jpg'),
+          require('../../pictures/reports/photos/15/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/15/desktop/image.webp'),
+          require('../../pictures/reports/photos/15/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report16',
+        mob: [
+          require('../../pictures/reports/photos/16/mobile/image.jpg'),
+          require('../../pictures/reports/photos/16/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/16/mobile/image.webp'),
+          require('../../pictures/reports/photos/16/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/16/tablet/image.jpg'),
+          require('../../pictures/reports/photos/16/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/16/tablet/image.webp'),
+          require('../../pictures/reports/photos/16/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/16/desktop/image.jpg'),
+          require('../../pictures/reports/photos/16/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/16/desktop/image.webp'),
+          require('../../pictures/reports/photos/16/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report17',
+        mob: [
+          require('../../pictures/reports/photos/17/mobile/image.jpg'),
+          require('../../pictures/reports/photos/17/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/17/mobile/image.webp'),
+          require('../../pictures/reports/photos/17/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/17/tablet/image.jpg'),
+          require('../../pictures/reports/photos/17/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/17/tablet/image.webp'),
+          require('../../pictures/reports/photos/17/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/17/desktop/image.jpg'),
+          require('../../pictures/reports/photos/17/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/17/desktop/image.webp'),
+          require('../../pictures/reports/photos/17/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report18',
+        mob: [
+          require('../../pictures/reports/photos/18/mobile/image.jpg'),
+          require('../../pictures/reports/photos/18/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/18/mobile/image.webp'),
+          require('../../pictures/reports/photos/18/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/18/tablet/image.jpg'),
+          require('../../pictures/reports/photos/18/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/18/tablet/image.webp'),
+          require('../../pictures/reports/photos/18/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/18/desktop/image.jpg'),
+          require('../../pictures/reports/photos/18/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/18/desktop/image.webp'),
+          require('../../pictures/reports/photos/18/desktop/image2x.webp'),
+        ],
+      },
+    ],
+    gallery: [
+      {
+        id: 'report1-1',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-2',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-3',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-4',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-5',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-6',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-7',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-8',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report1-9',
+        mob: [
+          require('../../pictures/reports/photos/1/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/1/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/1/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/1/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-1',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-2',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-3',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-4',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-5',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-6',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-7',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-8',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report2-9',
+        mob: [
+          require('../../pictures/reports/photos/2/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/2/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/2/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/2/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/2/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-1',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-2',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-3',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-4',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-5',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-6',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-7',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-8',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report3-9',
+        mob: [
+          require('../../pictures/reports/photos/3/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/3/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/3/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/3/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/3/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-1',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-2',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-3',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-4',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-5',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-6',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-7',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-8',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report4-9',
+        mob: [
+          require('../../pictures/reports/photos/4/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/4/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/4/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/4/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/4/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-1',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-2',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-3',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-4',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-5',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-6',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-7',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-8',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report5-9',
+        mob: [
+          require('../../pictures/reports/photos/5/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/5/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/5/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/5/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/5/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-1',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-2',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-3',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-4',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-5',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-6',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-7',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-8',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report6-9',
+        mob: [
+          require('../../pictures/reports/photos/6/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/6/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/6/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/6/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/6/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-1',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-2',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/1/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-3',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-4',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-5',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-6',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-7',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-8',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report7-9',
+        mob: [
+          require('../../pictures/reports/photos/7/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/7/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/7/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/7/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/7/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-1',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-2',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-3',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-4',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-5',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-6',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-7',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-8',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report8-9',
+        mob: [
+          require('../../pictures/reports/photos/8/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/8/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/8/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/8/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/8/gallery/9/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-1',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/1/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/1/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/1/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/1/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/1/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-2',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/2/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/2/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/2/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/2/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/2/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/2/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/2/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-3',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/3/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/3/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/3/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/3/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/3/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/3/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/3/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-4',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/4/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/4/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/4/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/4/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/4/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/4/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/4/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-5',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/5/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/5/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/5/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/5/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/5/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/5/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/5/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-6',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/6/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/6/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/6/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/6/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/6/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/6/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/6/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-7',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/7/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/7/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/7/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/7/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/7/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/7/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/7/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-8',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/8/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/8/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/8/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/8/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/8/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/8/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/8/desktop/image2x.webp'),
+        ],
+      },
+      {
+        id: 'report9-9',
+        mob: [
+          require('../../pictures/reports/photos/9/gallery/9/mobile/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/mobile/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/mobile/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/9/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/reports/photos/9/gallery/9/tablet/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/tablet/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/tablet/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/9/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/reports/photos/9/gallery/9/desktop/image.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/desktop/image2x.jpg'),
+          require('../../pictures/reports/photos/9/gallery/9/desktop/image.webp'),
+          require('../../pictures/reports/photos/9/gallery/9/desktop/image2x.webp'),
         ],
       },
     ],

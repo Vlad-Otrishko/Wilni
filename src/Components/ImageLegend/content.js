@@ -1,6 +1,6 @@
 export const content = {
   helpArmy: {
-    hero: {
+    pageMainContent: {
       id: 'helpArmy01',
       title: 'Українські військові потребують:',
       requirements: [
@@ -14,7 +14,7 @@ export const content = {
     },
   },
   helpChildren: {
-    hero: {
+    pageMainContent: {
       id: 'helpChildren01',
       title: 'Lorem ipsum dolor sit amet:',
       requirements: [
@@ -74,7 +74,7 @@ export const content = {
     ],
   },
   aero: {
-    hero: {
+    pageMainContent: {
       id: 'aero01',
       title: 'Lorem ipsum dolor sit amet:',
       requirements: [
@@ -143,6 +143,119 @@ export const content = {
   },
   news: {
     gallery: 'toBeGenerated',
-    contentSource:'title',
+    contentSource: 'title',
+  },
+  reports: {
+    photos: 'toBeGenerated',
+    gallery: {
+      report1: [
+        { id: 'report1-1' },
+        { id: 'report1-2' },
+        { id: 'report1-3' },
+        { id: 'report1-4' },
+        { id: 'report1-5' },
+        { id: 'report1-6' },
+        { id: 'report1-7' },
+        { id: 'report1-8' },
+        { id: 'report1-9' },
+        { id: 'report1-10' },
+      ],
+      report2: [
+        { id: 'report2-1' },
+        { id: 'report2-2' },
+        { id: 'report2-3' },
+        { id: 'report2-4' },
+        { id: 'report2-5' },
+        { id: 'report2-6' },
+        { id: 'report2-7' },
+        { id: 'report2-8' },
+        { id: 'report2-9' },
+        { id: 'report2-10' },
+      ],
+      report3: [
+        { id: 'report3-1' },
+        { id: 'report3-2' },
+        { id: 'report3-3' },
+        { id: 'report3-4' },
+        { id: 'report3-5' },
+        { id: 'report3-6' },
+        { id: 'report3-7' },
+        { id: 'report3-8' },
+        { id: 'report3-9' },
+        { id: 'report3-10' },
+      ],
+      report4: [
+        { id: 'report4-1' },
+        { id: 'report4-2' },
+        { id: 'report4-3' },
+        { id: 'report4-4' },
+        { id: 'report4-5' },
+        { id: 'report4-6' },
+        { id: 'report4-7' },
+        { id: 'report4-8' },
+        { id: 'report4-9' },
+        { id: 'report4-10' },
+      ],
+      report5: [
+        { id: 'report5-1' },
+        { id: 'report5-2' },
+        { id: 'report5-3' },
+        { id: 'report5-4' },
+        { id: 'report5-5' },
+        { id: 'report5-6' },
+        { id: 'report5-7' },
+        { id: 'report5-8' },
+        { id: 'report5-9' },
+        { id: 'report5-10' },
+      ],
+      report6: [
+        { id: 'report6-1' },
+        { id: 'report6-2' },
+        { id: 'report6-3' },
+        { id: 'report6-4' },
+        { id: 'report6-5' },
+        { id: 'report6-6' },
+        { id: 'report6-7' },
+        { id: 'report6-8' },
+        { id: 'report6-9' },
+        { id: 'report6-10' },
+      ],
+      report7: [
+        { id: 'report7-1' },
+        { id: 'report7-2' },
+        { id: 'report7-3' },
+        { id: 'report7-4' },
+        { id: 'report7-5' },
+        { id: 'report7-6' },
+        { id: 'report7-7' },
+        { id: 'report7-8' },
+        { id: 'report7-9' },
+        { id: 'report7-10' },
+      ],
+      report8: [
+        { id: 'report8-1' },
+        { id: 'report8-2' },
+        { id: 'report8-3' },
+        { id: 'report8-4' },
+        { id: 'report8-5' },
+        { id: 'report8-6' },
+        { id: 'report8-7' },
+        { id: 'report8-8' },
+        { id: 'report8-9' },
+        { id: 'report8-10' },
+      ],
+      report9: [
+        { id: 'report9-1' },
+        { id: 'report9-2' },
+        { id: 'report9-3' },
+        { id: 'report9-4' },
+        { id: 'report9-5' },
+        { id: 'report9-6' },
+        { id: 'report9-7' },
+        { id: 'report9-8' },
+        { id: 'report9-9' },
+        { id: 'report9-10' },
+      ],
+    },
   },
 };

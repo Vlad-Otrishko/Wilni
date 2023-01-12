@@ -7,8 +7,11 @@ import WebFont from 'webfontloader';
 
   WebFont.load({
     google: {
-      families: ['Oswald', 'Raleway']
-    }
+      families: [
+        'Oswald:300,400,500,600,700,900',
+        'Raleway:300,400,500,600,700,900',
+      ],
+    },
   });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

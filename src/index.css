@@ -13,6 +13,7 @@ font-family: 'Raleway';
   font-size: 16px;
   font-weight: 400;
   line-height: calc(24/16);
+  font-variant-numeric: lining-nums;
 }
 
 
@@ -69,7 +70,7 @@ font-family: 'Oswald';
   font-family: 'Raleway';
   font-size: 20px;
   line-height: calc(32/20);
-  font-variant-numeric: proportional-nums lining-nums;
+  font-variant-numeric: lining-nums proportional-nums;
   }
   .container {
     width: 1920px;
@@ -108,15 +109,17 @@ h3 {
     h4,
     h5,
     h6,
+    p,
+    ul,
+    ol,
+    li,
+    div,
     p {
+      box-sizing: border-box;
       margin: 0;
+      padding:0;
     }
   
-    ul,
-    ol {
-      margin: 0;
-      padding: 0;
-    }
   
     img {
       display: block;

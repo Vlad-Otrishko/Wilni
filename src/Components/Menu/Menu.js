@@ -6,28 +6,35 @@ import Navigation from '../Navigation';
 import LanguageSelect from '../LanguageSelect';
 import Button from '../Button';
 
-function Menu({modalSwitch, externalClass}) {
+function Menu({ modalSwitch, externalClass }) {
 
     return (
       <div className={s.menu}>
-        <button type="button" className={s.closeButton} onClick={()=>modalSwitch('off')}>
+        <button
+          type="button"
+          className={s.closeButton}
+          onClick={() => modalSwitch('off')}
+        >
           <img src={menu_close} alt="close icon" className={s.closeIcon} />
         </button>
         <Logo externalClass={externalClass} />
-        <Navigation location='header'/>
+        <Navigation location="header" />
         <a href="tel:+380730000000" className={s.phoneRef + ' ' + 'reset-link'}>
           +38 (073) 000-00-00
         </a>
-        <LanguageSelect options={['UK', 'RU', 'EN']}
-        externalClass={s.menuLanguageSelect}
-         />
-        <Button
-          componentType="link"
-          text="ШВИДКИЙ ДОНАТ"
-          componentClass="typeOneLink"
-          destination="quick_donation"
-          externalClass={s.menuQuickDonation}
+        <LanguageSelect
+          options={{ languages: ['UK', 'EN'] }}
+          externalClass={s.menuLanguageSelect}
         />
+        <div className={s.buttonSpace}>
+          <Button
+            componentType="link"
+            text="ШВИДКИЙ ДОНАТ"
+            componentClass="typeOneLink"
+            destination="quick_donation"
+            externalClass={s.menuQuickDonation}
+          />
+        </div>
         <img src={menuIcon} alt="human face" className={s.menuIcon} />
       </div>
     );

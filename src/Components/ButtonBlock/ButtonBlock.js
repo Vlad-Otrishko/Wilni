@@ -9,14 +9,14 @@ function ButtonBlock() {
           componentType="link"
           text="ПІДТРИМАТИ"
           componentClass="typeOneLink"
-          destination="donate"
+          destination="/donate/privatbank"
           externalClass={s.supportButton}
         />
         <Button
           componentType="link"
           text="РЕГУЛЯРНИЙ ДОНАТ"
           componentClass="typeTwoLink"
-          destination="regular_donation"
+          destination="/regular_donation"
           externalClass={s.regularDonationButton}
         />
       </section>

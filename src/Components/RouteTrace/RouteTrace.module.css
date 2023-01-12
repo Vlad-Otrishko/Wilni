@@ -8,11 +8,6 @@
     flex-wrap: wrap;
 }
 
-.routeStringItem {
-    display: flex;
-    align-items: center;
-    margin-left: 4px;
-}
 
 .homeIcon,
 .delimiterIcon {
@@ -25,7 +20,11 @@
 }
 
 .routeItemDescription {
+    white-space: pre;
     color: var(--grey);
+}
+.routeItemDescription__last{
+    color:var(--black);
 }
 
 @media screen and (min-width:1920px) {

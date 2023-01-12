@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 import s from './Footer.module.css';
 import Logo from '../Logo';
 import Navigation from '../Navigation';
 import spritePath from './icons/sprite.svg';
 
 function Footer() {
+  const location = useLocation();
+  if (location.pathname.includes('quick_donation') || location.pathname.includes('regular_donation')) return null;
     return (
       <footer className={s.footer}>
         <ul className={s.footerWrapper + ' ' + 'reset-list'}>
