@@ -17,8 +17,14 @@ function Menu({ modalSwitch, externalClass }) {
         >
           <img src={menu_close} alt="close icon" className={s.closeIcon} />
         </button>
-        <Logo externalClass={externalClass} />
-        <Navigation location="header" />
+        <Logo
+          externalClass={externalClass}
+          clickSequence={() => modalSwitch('off')}
+        />
+        <Navigation
+          location="header"
+          clickSequence={() => modalSwitch('off')}
+        />
         <a href="tel:+380730000000" className={s.phoneRef + ' ' + 'reset-link'}>
           +38 (073) 000-00-00
         </a>
@@ -26,15 +32,14 @@ function Menu({ modalSwitch, externalClass }) {
           options={{ languages: ['UK', 'EN'] }}
           externalClass={s.menuLanguageSelect}
         />
-        <div className={s.buttonSpace}>
-          <Button
-            componentType="link"
-            text="ШВИДКИЙ ДОНАТ"
-            componentClass="typeOneLink"
-            destination="quick_donation"
-            externalClass={s.menuQuickDonation}
-          />
-        </div>
+        <Button
+          componentType="link"
+          text="ШВИДКИЙ ДОНАТ"
+          componentClass="typeOneLink"
+          destination="quick_donation"
+          externalClass={s.menuQuickDonation}
+          clickSequence={() => modalSwitch('off')}
+        />
         <img src={menuIcon} alt="human face" className={s.menuIcon} />
       </div>
     );

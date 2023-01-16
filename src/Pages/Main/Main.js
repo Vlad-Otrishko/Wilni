@@ -14,8 +14,10 @@ import picture4 from './pictures/bag_open.jpg';
 function Main() {
   return (
     <>
-      <main className={s.main}>
-        <BannerLinks pageName='main'/>
+      <section className={s.main}>
+        <section className={s.bannerLinksBlock}>
+          <BannerLinks pageName="main" />
+        </section>
         <section className={s.chrono}>
           <Slider />
           <div className={s.chronoTextBlock}>
@@ -140,7 +142,7 @@ function Main() {
             </li>
           </ul>
         </section>
-      </main>
+      </section>
     </>
   );
 }

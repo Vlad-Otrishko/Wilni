@@ -459,6 +459,7 @@ export const textData = {
       privatbank: {
         paymentOptions: [
           {
+            id:'privatTRU',
             title: 'Перекази по Україні',
             description: [
               {
@@ -488,6 +489,7 @@ export const textData = {
             ],
           },
           {
+            id:'privatUAH',
             title: 'Поповнення карти у гривні (UAH)',
             description: [
               {
@@ -525,6 +527,7 @@ export const textData = {
             ],
           },
           {
+            id:'privatUSD',
             title: 'Поповнення карти у доларах (USD)',
             description: [
               {
@@ -581,6 +584,7 @@ export const textData = {
             ],
           },
           {
+            id:'privatEUR',
             title: 'Поповнення карти у доларах (EUR)',
             description: [
               {
@@ -637,6 +641,7 @@ export const textData = {
             ],
           },
           {
+            id:'privatPayPAl',
             title: 'PayPal',
             description: [
               {
@@ -650,6 +655,7 @@ export const textData = {
       monobank: {
         paymentOptions: [
           {
+            id:'monoTRU',
             title: 'Перекази по Україні',
             description: [
               {
@@ -675,6 +681,7 @@ export const textData = {
             ],
           },
           {
+            id:'monoUAH',
             title: 'Поповнення карти у гривні (UAH)',
             description: [
               {
@@ -708,6 +715,7 @@ export const textData = {
             ],
           },
           {
+            id:'monoUSD',
             title: 'Поповнення карти у доларах (USD)',
             description: [
               {
@@ -753,6 +761,7 @@ export const textData = {
             ],
           },
           {
+            id:'monoEUR',
             title: 'Поповнення карти у доларах (EUR)',
             description: [
               {
@@ -802,6 +811,7 @@ export const textData = {
             ],
           },
           {
+            id:'monoPayPal',
             title: 'PayPal',
             description: [
               {

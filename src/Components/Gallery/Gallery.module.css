@@ -37,11 +37,17 @@
     height: 100%;
     font-family: 'Oswald', sans-serif;
     color: var(--white);
-    background-color: rgba(21, 35, 25, 0.35);
     border-radius: 8px;
 }
+
 .legendWrapper__reports:not(:empty){
-    backdrop-filter: blur(3px);
+    background-color: rgba(21, 35, 25, 0.35);
+    backdrop-filter: blur(1.7px);
+    transition: background-color 300ms ease-in-out;
+}
+.legendWrapper__reports:not(:empty):hover {
+    background-color: rgba(21, 35, 25, 0.5);
+    transition: background-color 300ms ease-in-out;
 }
 .image__reports {
     width: 100%;
@@ -202,7 +208,7 @@
         background-color: rgba(21, 35, 25, 0.25);
     }
     .legendWrapper__reports:not(:empty){
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(1.2px);
     }
     .galleryList {
         margin: -8px;
@@ -287,7 +293,7 @@
         margin-right:0;
     }
     .galleryItem__news{
-        flex-basis: calc((100% - 32px*4)/4);
+        flex-basis: calc((100% - 32px*3)/4);
     }
 
     .galleryItem__reports{

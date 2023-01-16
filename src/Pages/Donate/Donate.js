@@ -17,6 +17,8 @@ function Donate() {
   const pageContent = TextModules('donate', 'pageMainContent');
     const paymentOptions = pageContent[bankChosen].paymentOptions;
   let trackingPath = pathnameToArray.filter((el, index) => index === 0);
+
+  const paymentOptionsAnchors =['UkrTransfer', 'cardUAH','', 'swift','payPal']
   
   function copyInformation(e) {
     console.dir(e.currentTarget.parentNode.textContent);
@@ -48,7 +50,7 @@ function Donate() {
                 componentType="link"
                 text="ПЛАТІЖ КАРТКОЮ"
                 componentClass="typeTwoLink"
-                destination=""
+                destination="/quick_donation"
               />
             </li>
             <li className={s.buttonSpace}>
@@ -56,7 +58,7 @@ function Donate() {
                 componentType="link"
                 text="ПО УКРАЇНІ"
                 componentClass="typeTwoLink"
-                destination=""
+                destination={`#${paymentOptionsAnchors[0]}`}
               />
             </li>
             <li className={s.buttonSpace}>
@@ -64,7 +66,7 @@ function Donate() {
                 componentType="link"
                 text="UAH"
                 componentClass="typeTwoLink"
-                destination=""
+                destination={`#${paymentOptionsAnchors[1]}`}
               />
             </li>
             <li className={s.buttonSpace}>
@@ -72,7 +74,7 @@ function Donate() {
                 componentType="link"
                 text="SWIFT"
                 componentClass="typeTwoLink"
-                destination=""
+                destination={`#${paymentOptionsAnchors[3]}`}
               />
             </li>
             <li className={s.buttonSpace}>
@@ -80,13 +82,17 @@ function Donate() {
                 componentType="link"
                 text="PAYPAL"
                 componentClass="typeTwoLink"
-                destination=""
+                destination={`#${paymentOptionsAnchors[4]}`}
               />
             </li>
           </ul>
           <ul className={s.paymentOptions + ' ' + 'reset-list'}>
-            {paymentOptions.map((option) => (
-              <li key={nanoid()} className={s.paymentOption}>
+            {paymentOptions.map((option, index) => (
+              <li
+                key={nanoid()}
+                id={paymentOptionsAnchors[index]}
+                className={s.paymentOption}
+              >
                 <h3 className={s.paymentOptionTitle}>{option.title}</h3>
                 <ul className={s.paymentOptionDescription + ' ' + 'reset-list'}>
                   {option.description.map((item) => (

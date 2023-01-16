@@ -40,6 +40,9 @@
 .galleryLegendItem__news__reference{
     color: var(--black);
 }
+.galleryLegendItem__news__reference:hover {
+    color: var(--red-dark);
+}
 .galleryLegendItem__news__date{
     color:var(--grey);
     font-size:16px;

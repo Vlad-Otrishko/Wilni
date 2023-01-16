@@ -16,38 +16,53 @@
     align-items: center;
     width: 100%;
     height: 160px;
-    background-position: 50% 50%;
+    background-size: 100%;
+    background-position: center center;
     border-radius: 8px;
+    transition: background-size 300ms ease-in-out;
 }
 
 .trooper {
     background-image:
         linear-gradient(rgba(67, 122, 47, 0.4), rgba(67, 122, 47, 0.4)),
-        url(./pictures/trooper.jpg);
-    background-size: cover;
+        -webkit-image-set(url("./pictures/mobile/trooper2x.webp") 2x,
+                url("./pictures/mobile/trooper.webp") 1x,
+                url("./pictures/mobile/trooper2x.jpg") 2x,
+                url("./pictures/mobile/trooper.webp") 1x);
 }
 
 .girl {
     background-image:
         linear-gradient(rgba(157, 94, 104, 0.5), rgba(157, 94, 104, 0.5)),
-        url(./pictures/girl.jpg);
-    background-size: cover;
+        -webkit-image-set(
+        url("./pictures/mobile/girl2x.webp") 2x,
+        url("./pictures/mobile/girl.webp") 1x,
+        url("./pictures/mobile/girl2x.jpg") 2x,
+        url("./pictures/mobile/girl.webp") 1x);
 }
 
 .drone {
     background-image:
         linear-gradient(rgba(71, 112, 147, 0.4), rgba(71, 112, 147, 0.4)),
-        url(./pictures/drone.jpg);
-    background-size: cover;
-}
+        -webkit-image-set(
+        url("./pictures/mobile/drone2x.webp") 2x,
+        url("./pictures/mobile/drone.webp") 1x,
+        url("./pictures/mobile/drone2x.jpg") 2x,
+        url("./pictures/mobile/drone.webp") 1x);
+    }
 
+.frame:hover {
+    transition: background-size 300ms ease-in-out;
+    background-size: 115%;
+}
 .otherPageLink {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(1.7px);
+    border-radius:8px;
 }
 
 .navigationTextBlock {
@@ -109,7 +124,32 @@
 
 
 @media screen and (min-width:768px) and (max-width:1919px) {
+.trooper {
+        background-image:
+            linear-gradient(rgba(67, 122, 47, 0.4), rgba(67, 122, 47, 0.4)),
+            -webkit-image-set(url("./pictures/tablet/trooper2x.webp") 2x,
+                url("./pictures/tablet/trooper.webp") 1x,
+                url("./pictures/tablet/trooper2x.jpg") 2x,
+                url("./pictures/tablet/trooper.webp") 1x);
+    }
 
+    .girl {
+        background-image:
+            linear-gradient(rgba(157, 94, 104, 0.5), rgba(157, 94, 104, 0.5)),
+            -webkit-image-set(url("./pictures/tablet/girl2x.webp") 2x,
+                url("./pictures/tablet/girl.webp") 1x,
+                url("./pictures/tablet/girl2x.jpg") 2x,
+                url("./pictures/tablet/girl.webp") 1x);
+    }
+
+    .drone {
+        background-image:
+            linear-gradient(rgba(71, 112, 147, 0.4), rgba(71, 112, 147, 0.4)),
+            -webkit-image-set(url("./pictures/tablet/drone2x.webp") 2x,
+                url("./pictures/tablet/drone.webp") 1x,
+                url("./pictures/tablet/drone2x.jpg") 2x,
+                url("./pictures/tablet/drone.webp") 1x);
+    }
     /* illustrated links to other pages */
     .bannerLinksTitle{
         font-size:32px;
@@ -120,10 +160,6 @@
         align-items: flex-start;
         padding-top: 24px;
     }
-    .navigationList__main{
-        padding-left: 32px;
-        padding-right: 32px;
-        }
     .navigationList__about {
         padding-top: 16px;
     }
@@ -162,6 +198,33 @@
 
 }
 @media screen and (min-width:1920px) {
+.trooper {
+        background-image:
+            linear-gradient(rgba(67, 122, 47, 0.4), rgba(67, 122, 47, 0.4)),
+            -webkit-image-set(url("./pictures/desktop/trooper2x.webp") 2x,
+                url("./pictures/desktop/trooper.webp") 1x,
+                url("./pictures/desktop/trooper2x.jpg") 2x,
+                url("./pictures/desktop/trooper.webp") 1x);
+    }
+
+    .girl {
+        background-image:
+            linear-gradient(rgba(157, 94, 104, 0.5), rgba(157, 94, 104, 0.5)),
+            -webkit-image-set(url("./pictures/desktop/girl2x.webp") 2x,
+                url("./pictures/desktop/girl.webp") 1x,
+                url("./pictures/desktop/girl2x.jpg") 2x,
+                url("./pictures/desktop/girl.webp") 1x);
+    }
+
+    .drone {
+        background-image:
+            linear-gradient(rgba(71, 112, 147, 0.4), rgba(71, 112, 147, 0.4)),
+            -webkit-image-set(url("./pictures/desktop/drone2x.webp") 2x,
+                url("./pictures/desktop/drone.webp") 1x,
+                url("./pictures/desktop/drone2x.jpg") 2x,
+                url("./pictures/desktop/drone.webp") 1x);
+    }
+
     .bannerLinksTitle {
             font-size: 48px;
             line-height: calc(71/48);
@@ -177,17 +240,20 @@
         padding-top: 32px;
     }
     .navigationList__main {
-        padding-left: 160px;
-        padding-right: 160px;
+        column-gap:32px;
+    }
+    .navigationList__about {
+        column-gap:32px;
     }
     .navigationItem{
         flex-basis: calc((100% - 64px)/3);
     }
-    .navigationItem:not(:last-child) {
+    /* .navigationItem:not(:last-child) {
         margin-right: 32px;
-    }
+    } */
     .otherPageLink {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
     }
 
     .lineBreak {

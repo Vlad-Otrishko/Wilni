@@ -44,6 +44,7 @@ function RegularDonation() {
   const [email, setEmail] = useState();
   const [phone, setPhone] = useState('');
   const [valid, setValid] = useState();
+  const [regularity, setRegularity] = useState();
 
     const stateData = {
       amount,
@@ -86,7 +87,7 @@ function RegularDonation() {
   const checkInputsBeforeSubmit = () =>
     validationOfInputFields(inputs, errorMessages, setValid, s);
   
-  console.log(amount);
+  console.log(regularity);
   
 
   return (
@@ -134,7 +135,7 @@ function RegularDonation() {
                 componentType="button"
                 externalClass={s.amountButtonSpace}
                 componentClass={'typeOneButton'}
-                text={`${Number(amount).toFixed(2)} гривень на день`}
+                text={`${Number(amount).toFixed(2)} гривень на ${regularity==='monthly'? 'місяць':'день'}`}
               />
             </div>
           </div>
@@ -312,11 +313,21 @@ function RegularDonation() {
                 <p className={s.groupTitle}>Спосіб повторення:</p>
                 <div className={s.radioInputsWrapper}>
                   <label className={s.label + ' ' + s.radioInputLabel}>
-                    <input type="radio" name="regularity" value="monthly" />
+                    <input
+                      type="radio"
+                      name="regularity"
+                      value="monthly"
+                      onChange={(e) => setRegularity(e.target.value)}
+                    />
                     <p className={s.radioInputDescription}>щомісяця </p>
                   </label>
                   <label className={s.label + ' ' + s.radioInputLabel}>
-                    <input type="radio" name="regularity" value="dayly" />
+                    <input
+                      type="radio"
+                      name="regularity"
+                      value="dayly"
+                      onChange={(e) => setRegularity(e.target.value)}
+                    />
                     <p className={s.radioInputDescription}>щодня</p>
                   </label>
                 </div>

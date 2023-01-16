@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import s from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
-function Navigation({ location, links, imagePath}) {
+function Navigation({ location, links, imagePath, clickSequence}) {
   return (
     <>
       {location === 'reports' || location === 'donate' ? (
@@ -23,7 +23,9 @@ function Navigation({ location, links, imagePath}) {
                       {location === 'reports' && Object.values(el)[0]}
                       {location === 'donate' && (
                         <svg className={s.linkIcon}>
-                          <use href={`${imagePath}#${Object.keys(el)[0]}`}></use>
+                          <use
+                            href={`${imagePath}#${Object.keys(el)[0]}`}
+                          ></use>
                         </svg>
                       )}
                     </span>
@@ -40,6 +42,7 @@ function Navigation({ location, links, imagePath}) {
               <NavLink
                 to="/about"
                 className={`reset-link ${s.navLink} ` + s[`${location}NavLink`]}
+                onClick={clickSequence}
               >
                 {({ isActive }) => (
                   <span className={isActive ? s.activeLink : undefined}>
@@ -52,6 +55,7 @@ function Navigation({ location, links, imagePath}) {
               <NavLink
                 to="/news"
                 className={`reset-link ${s.navLink} ` + s[`${location}NavLink`]}
+                onClick={clickSequence}
               >
                 {({ isActive }) => (
                   <span className={isActive ? s.activeLink : undefined}>
@@ -64,6 +68,7 @@ function Navigation({ location, links, imagePath}) {
               <NavLink
                 to="/reports/documents"
                 className={`reset-link ${s.navLink} ` + s[`${location}NavLink`]}
+                onClick={clickSequence}
               >
                 {({ isActive }) => (
                   <span className={isActive ? s.activeLink : undefined}>
