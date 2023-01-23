@@ -9,6 +9,11 @@
 .heroTitle {
     text-align: center;
 }
+.heroTitle__chronology{
+    font-size: 28px;
+    line-height:calc(41/28);
+    font-weight: 400;
+}
 
 .heroText {
     padding-top: 16px;
@@ -91,7 +96,10 @@
         font-size: 32px;
         line-height: calc(47.42/32);
     }
-
+    .heroTitle__chronology {
+        font-size: 32px;
+        line-height: calc(32/47);
+    }
     .heroCentralPartElement__helpChildren {
         height: 234px;
     }
@@ -118,6 +126,10 @@
 
     .hero {
         padding-top: 40px;
+    }
+    .heroTitle__chronology{
+        font-size: 48px;
+        line-height:calc(71/48);
     }
 
     .heroText {

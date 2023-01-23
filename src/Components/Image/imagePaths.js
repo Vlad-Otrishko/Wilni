@@ -1,4 +1,13 @@
 export const imagePaths = {
+  main: {
+    slider: [
+      {
+        id: 'slide01',
+        mob:[]
+      }
+    ],
+
+  },
   aero: {
     pageMainContent: {
       id: 'aero01',

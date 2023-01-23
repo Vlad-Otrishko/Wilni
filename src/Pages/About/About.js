@@ -16,8 +16,6 @@ function About({ picturePosition }) {
   const location = useLocation();
   const { articleId } = useParams();
 
-  // console.log(useParams());
-
 
   const pathnameToArray = location.pathname.split('/').filter(Boolean);
   const lastElement = pathnameToArray.length - 1;
@@ -53,14 +51,17 @@ function About({ picturePosition }) {
   const markedListExists = mainTextContent && mainTextContent.list;
 
 
-
   let trackingPath = pathnameToArray;
-
   if (articleId && mainTitleExists) {
     trackingPath.pop();
     if (pageName === 'reports') { trackingPath.push(mainTextContent.title + ' ' + mainTextContent.date) }
     else { trackingPath.push(mainTextContent.title) }
   }
+
+  if (pageName === 'chronology') {
+    trackingPath.pop();
+  }
+
     return (
       <div className={s.pageContainer}>
         <RouteTrace trackingPath={trackingPath} />
@@ -70,7 +71,7 @@ function About({ picturePosition }) {
         {mainContentExists && (
           <article className={s.hero}>
             {mainTitleExists && (
-              <h1 className={s.heroTitle}>
+              <h1 className={s.heroTitle+ ' ' +s[`heroTitle__${pageName}`]}>
                 {mainTextContent.title}
                 {pageName==='reports' && articleId && (' '+ mainTextContent.date)}
               </h1>
@@ -132,7 +133,7 @@ function About({ picturePosition }) {
             )}
           </article>
         )}
-        <Outlet />
+        {pageName!=='chronology' && <Outlet />}
 
         <Gallery pageName={pageName} section="gallery" articleId={articleId} />
         <BannerLinks pageName={pageName} />

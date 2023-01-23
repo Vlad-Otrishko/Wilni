@@ -1,0 +1,37 @@
+.signature{
+    display:flex;
+    margin-top: 12px;
+    column-gap:12px;
+    align-items: center;
+    color:var(--black);
+}
+.iconWrapper{
+    max-width: 32px;
+    max-height:32px;
+    padding:3px;
+}
+.socialIcon{
+    display:block;
+    width:32px;
+    height:32px;
+    fill: var(--grey);
+}
+
+@media screen and (max-width:1919px) {
+
+    .articleBody{
+        margin-top:12px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1919px) {
+.signature {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+.signature {
+        margin-top: 16px;
+    }
+}

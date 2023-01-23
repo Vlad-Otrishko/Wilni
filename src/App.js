@@ -13,6 +13,7 @@ import { Context } from './context';
 import MarkedList from 'Components/MarkedList';
 import TextModules from 'Components/TextModules';
 import Gallery from 'Components/Gallery';
+import ChronoArticle from 'Components/ChronoArticle';
 function App() {
 //Отслеживаем размер вьюпорта, и передаем в контекст-провайдер.
   const [viewPort, setViewPort] = useState(window.visualViewport.width);
@@ -38,13 +39,13 @@ function App() {
         <BrowserRouter>
           {modalStatus === 'off' ? (
             <>
-              <Header
-                modalSwitch={switchModal}
-              />
+              <Header modalSwitch={switchModal} />
               <main>
                 <Routes>
                   <Route path="/" element={<Main />} />
-                  {/* <Route path='chronology' element={<Chronology/> }/> */}
+                  <Route path='/chronology' element={<About />} >
+                    <Route path='/chronology/:id' element={<ChronoArticle/>} />
+                    </Route>
                   <Route
                     path="/helpArmy"
                     element={<About picturePosition={[0, 'after']} />}
@@ -90,16 +91,16 @@ function App() {
                   </Route>
                   <Route path="/donate/:bankChosen" element={<Donate />} />
                   <Route path="/quick_donation" element={<QuickDonation />} />
-                  <Route path='/regular_donation' element={<RegularDonation/> }/>
+                  <Route
+                    path="/regular_donation"
+                    element={<RegularDonation />}
+                  />
                 </Routes>
               </main>
               <Footer />
             </>
           ) : (
-            <Modal
-              modalStatus={modalStatus}
-              modalSwitch={switchModal}
-            />
+            <Modal modalStatus={modalStatus} modalSwitch={switchModal} />
           )}
         </BrowserRouter>
       </Context.Provider>

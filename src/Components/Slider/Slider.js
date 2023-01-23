@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 import { nanoid } from 'nanoid';
 import s from './Slider.module.css';
 import iconPath from './icons/sprite.svg';
@@ -73,6 +73,10 @@ function Slider() {
     ],
   alt:['soldiers', 'tanks', 'field', 'airplane']
   }
+
+  const [swipeStart, setSwipeStart] = useState(0);
+  const [swipeEnd, setSwipeEnd] = useState(0);
+
   const [picturePath, setPicturePath] = useState({
     dsk: pictureRoutes.desktop[0],
     dskWeb: pictureRoutes.desktopWeb[0],
@@ -107,12 +111,39 @@ function Slider() {
   function setImage(e) {
     i = e.target.dataset.path;
     pathDefine(i);
-
   }
+
+  // function handleSwipeMove(e) {
     
+  //   setSwipeEnd(
+  //       e.targetTouches[0].clientX,
+  //     (() => {
+  //       if ((swipeEnd - swipeStart) > 300) {
+  //         return previousImage();
+  //       }
+  //       if ((swipeEnd - swipeStart) < -300) {
+  //         return nextImage();
+  //       }
+  //       return;
+  //     })()
+  //   );
+  // }
+  useEffect(() => {
+    if ((swipeEnd - swipeStart) > 150) {
+      return previousImage();
+    }
+    if ((swipeEnd - swipeStart) < -150) {
+      return nextImage();
+    }
+    return;
+  }, [swipeStart, swipeEnd]
+  );
     return (
       <div className={s.sliderBody}>
-        <div className={s.slideContainer}>
+        <div className={s.slideContainer}
+          onTouchStart={e => { setSwipeStart(e.targetTouches[0].clientX)}}
+          onTouchMove={e => setTimeout(() => {setSwipeEnd(e.targetTouches[0].clientX),500})}
+        >
           <picture>
             <source
               srcSet={picturePath.dskWeb}

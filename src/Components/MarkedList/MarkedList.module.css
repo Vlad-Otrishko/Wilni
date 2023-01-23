@@ -45,6 +45,40 @@
 .documentLink{
     color:var(--black);
 }
+
+.markedList__chronology{
+    margin-top:16px;
+}
+.markedListItem__chronology:not(:first-child){
+    margin-top:12px;
+}
+.chronoLink{
+    color:var(--grey-dark);
+}
+.chronoLink:hover{
+    color:var(--black);
+}
+.chronolinkTitle{
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+.activeLink{
+    color:var(--red-dark);
+}
+.activeListItem{
+    padding-bottom:16px;
+    border-bottom: 1px solid var(--grey5);
+}
+.activeListItem:not(:first-child){
+    padding-top:12px;
+    border-top: 1px  solid var(--grey5);
+}
+/* .markedListItem__chronology:not(:first-child) .activeLink {
+    border-top: 1px  solid var(--grey5);
+    padding-top:12px;
+} */
 @media screen and (max-width:767px){
 .markedListItem__reports:not(:first-child) {
     margin-top: 12px;
@@ -74,6 +108,9 @@
     max-height: 152px;
     row-gap: 8px;
 }
+.markedList__chronology {
+    margin-top: 14px;
+}
 }
 
 @media screen and (min-width:1920px) {
@@ -89,5 +126,25 @@
     padding-right:408px;
     max-height: 176px;
     row-gap: 16px;
+}
+.markedList__chronology {
+    margin-top: 32px;
+}
+.markedListItem__chronology {
+    display: flex;
+    column-gap: 67px;
+}
+.markedListItem__chronology:not(:first-child){
+    margin-top:32px;
+}
+.activeListItem{
+    padding-bottom:32px;
+}
+.activeListItem:not(:first-child){
+    padding-top:32px;
+}
+.chronolinkTitle{
+    font-size:28px;
+    line-height:calc(36/28);
 }
 }

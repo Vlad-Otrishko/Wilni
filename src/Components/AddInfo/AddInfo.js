@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import s from './AddInfo.module.css';
-import iconPath from './icons/sprite.svg';
+import iconPath from '../../icons/sprite.svg';
 // import { socialLinks } from '../TextModules/socialLinks';
 
 

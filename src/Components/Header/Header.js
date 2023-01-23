@@ -58,7 +58,7 @@ const donationPage = location.pathname.includes('quick_donation') ||
               />
             </>
           )}
-          {viewPort >= 1920 && <Menu externalClass={s.headerLogo__main} />}
+            {viewPort >= 1920 && <Menu modalSwitch={modalSwitch} externalClass={s.headerLogo__main} />}
         </>
       )}
     </header>

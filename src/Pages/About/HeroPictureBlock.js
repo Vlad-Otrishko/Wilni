@@ -6,7 +6,8 @@ import { content } from '../../Components/ImageLegend/content';
 
 
 function HeroPictureBlock({ pageName, section, id }) {
-  console.log(pageName, section, id);
+  // console.log(pageName, section, id);
+  if (!content[pageName]) return null;
   const sectionContent = content[pageName][section];
   const legend = sectionContent
     ? sectionContent[id] || sectionContent

@@ -1,4 +1,5 @@
 import s from './Main.module.css';
+import { Link } from 'react-router-dom';
 import BannerLinks from '../../Components/BannerLinks';
 import Button from '../../Components/Button';
 import Slider from '../../Components/Slider';
@@ -30,9 +31,11 @@ function Main() {
               допомоги потребуючим, нашим захисникам, захисту рідного міста та
               держави.
             </p>
-            <p className={s.chronoText + ' ' + s.chronoPagination}>
-              Хронологія подій з 1-го дня
-            </p>
+            <Link to ='/chronology/chrono1'>
+              <p className={s.chronoText + ' ' + s.chronoPagination}>
+                Хронологія подій з 1-го дня
+              </p>
+            </Link>
           </div>
         </section>
         <section className={s.hero}>
@@ -77,7 +80,7 @@ function Main() {
             componentType="link"
             text="ДОКЛАДНІШЕ"
             componentClass="typeTwoLink"
-            destination=""
+            destination="/about"
             externalClass={s.mainShowMore}
           />
         </section>
