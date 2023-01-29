@@ -46,9 +46,9 @@ function Image({ folderName, section, id, externalClass }) {
             media="(max-width: 767px)"
           />
           <img
-            src={path.mob ? path.mob[0]:''}
+            src={path.mob ? path.mob[0] : ''}
             className={externalClass}
-            alt="фото дрону у повітрі"
+            alt={path.alt || 'image'}
           />
         </picture>
       )}

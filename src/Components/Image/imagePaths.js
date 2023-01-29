@@ -3,10 +3,93 @@ export const imagePaths = {
     slider: [
       {
         id: 'slide01',
-        mob:[]
-      }
+        mob: [
+          require('../../pictures/slider/image1/mobile/image.jpg'),
+          require('../../pictures/slider/image1/mobile/image2x.jpg'),
+          require('../../pictures/slider/image1/mobile/image.webp'),
+          require('../../pictures/slider/image1/mobile/image2x.webp'),
+        ],
+        tab: [
+          require('../../pictures/slider/image1/tablet/image.jpg'),
+          require('../../pictures/slider/image1/tablet/image2x.jpg'),
+          require('../../pictures/slider/image1/tablet/image.webp'),
+          require('../../pictures/slider/image1/tablet/image2x.webp'),
+        ],
+        dsk: [
+          require('../../pictures/slider/image1/desktop/image.jpg'),
+          require('../../pictures/slider/image1/desktop/image2x.jpg'),
+          require('../../pictures/slider/image1/desktop/image.webp'),
+          require('../../pictures/slider/image1/desktop/image2x.webp'),
+        ],
+        alt: 'команда волонтерів',
+      },
+      {
+        id: 'slide02',
+        mob: [
+          require('../../pictures/slider/image2/mobile/image.jpg'),
+          require('../../pictures/slider/image2/mobile/image.jpg'),
+          require('../../pictures/slider/image2/mobile/image.webp'),
+          require('../../pictures/slider/image2/mobile/image.webp'),
+        ],
+        tab: [
+          require('../../pictures/slider/image2/tablet/image.jpg'),
+          require('../../pictures/slider/image2/tablet/image.jpg'),
+          require('../../pictures/slider/image2/tablet/image.webp'),
+          require('../../pictures/slider/image2/tablet/image.webp'),
+        ],
+        dsk: [
+          require('../../pictures/slider/image2/desktop/image.jpg'),
+          require('../../pictures/slider/image2/desktop/image.jpg'),
+          require('../../pictures/slider/image2/desktop/image.webp'),
+          require('../../pictures/slider/image2/desktop/image.webp'),
+        ],
+        alt: 'бронетехніка',
+      },
+      {
+        id: 'slide03',
+        mob: [
+          require('../../pictures/slider/image3/mobile/image.jpg'),
+          require('../../pictures/slider/image3/mobile/image.jpg'),
+          require('../../pictures/slider/image3/mobile/image.webp'),
+          require('../../pictures/slider/image3/mobile/image.webp'),
+        ],
+        tab: [
+          require('../../pictures/slider/image3/tablet/image.jpg'),
+          require('../../pictures/slider/image3/tablet/image.jpg'),
+          require('../../pictures/slider/image3/tablet/image.webp'),
+          require('../../pictures/slider/image3/tablet/image.webp'),
+        ],
+        dsk: [
+          require('../../pictures/slider/image3/desktop/image.jpg'),
+          require('../../pictures/slider/image3/desktop/image.jpg'),
+          require('../../pictures/slider/image3/desktop/image.webp'),
+          require('../../pictures/slider/image3/desktop/image.webp'),
+        ],
+        alt: 'військовий патрулює територію',
+      },
+      {
+        id: 'slide04',
+        mob: [
+          require('../../pictures/slider/image4/mobile/image.jpg'),
+          require('../../pictures/slider/image4/mobile/image.jpg'),
+          require('../../pictures/slider/image4/mobile/image.webp'),
+          require('../../pictures/slider/image4/mobile/image.webp'),
+        ],
+        tab: [
+          require('../../pictures/slider/image4/tablet/image.jpg'),
+          require('../../pictures/slider/image4/tablet/image.jpg'),
+          require('../../pictures/slider/image4/tablet/image.webp'),
+          require('../../pictures/slider/image4/tablet/image.webp'),
+        ],
+        dsk: [
+          require('../../pictures/slider/image4/desktop/image.jpg'),
+          require('../../pictures/slider/image4/desktop/image.jpg'),
+          require('../../pictures/slider/image4/desktop/image.webp'),
+          require('../../pictures/slider/image4/desktop/image.webp'),
+        ],
+        alt: 'літак',
+      },
     ],
-
   },
   aero: {
     pageMainContent: {

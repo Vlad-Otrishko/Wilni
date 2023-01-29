@@ -31,7 +31,7 @@ function Main() {
               допомоги потребуючим, нашим захисникам, захисту рідного міста та
               держави.
             </p>
-            <Link to ='/chronology/chrono1'>
+            <Link to='/chronology/chrono1' className={'reset-link'}>
               <p className={s.chronoText + ' ' + s.chronoPagination}>
                 Хронологія подій з 1-го дня
               </p>

@@ -38,7 +38,13 @@
     line-height:calc(24/16);
     letter-spacing: 0.02em;
     color:var(--red-dark);
+    transition: color 300ms ease-in-out;
 }
+.chronoPagination:hover, .chronoPagination:focus {
+    transition: color 300ms ease-in-out;
+    color: var(--red-light);
+}
+
 .paginationBar{
     text-align:center;
     color:var(--grey);
@@ -51,7 +57,7 @@
     }
 .heroImage{
     width:100%;
-    /* height:auto; */
+        /* height:auto; */
 }
 .heroText{
     margin-top:16px;
@@ -276,7 +282,7 @@ margin: 16px auto;
         height:100%;
         object-fit: cover;
         object-position: 50% 50%;
-        border-radius:8px;
+        border-radius:20px;
     }
     .heroTextBlock{
         margin-right:32px;

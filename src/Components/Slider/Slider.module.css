@@ -1,20 +1,122 @@
-
-.sliderBody{
-    position:relative;
+.slider{
+position:relative;
 }
-.slideContainer{
-position: relative;
-border-radius:8px;
+.slides{
+display:flex;
+column-gap:8px;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+-webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar{
+    width:0;
+    height:0;
 }
 .slide{
-    width:100%;
-    height:100%;
+width:100%;
+height:100%;
+flex-grow:1;
+flex-shrink:0;
+scroll-snap-align: center;
+}
+.sliderImage, .sliderImage__reverse {
     object-fit: cover;
-    object-position:50% 0%;
-    border-radius:8px;
+    object-position: top left; 
+    animation-duration: 300ms;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+.sliderImage{
+    animation-name: Appearance;
+}
+.sliderImage__reverse{
+    animation-name: Appearance__reverse;
 }
 
-.slideContainer::after {
+@-webkit-keyframes Appearance {
+    0% {
+        object-position: 1600px 0;
+    }
+
+    100% {
+        object-position:0 0;
+    }
+}
+
+@-o-keyframes Appearance {
+    0% {
+        object-position: 1600px 0;
+    }
+
+    100% {
+        object-position:0 0;
+    }
+}
+
+@-moz-keyframes Appearance {
+    0% {
+        object-position: 1600px 0;
+    }
+
+    100% {
+        object-position:0 0;
+    }
+}
+
+@keyframes Appearance {
+    0% {
+        object-position: 1600px 0;
+    }
+
+    100% {
+        object-position:0 0;
+    }
+}
+
+
+@-webkit-keyframes Appearance__reverse {
+    0% {
+        object-position: -1600px 0;
+    }
+
+    100% {
+        object-position: 0 0;
+    }
+}
+
+@-o-keyframes Appearance__reverse {
+    0% {
+        object-position: -1600px 0;
+    }
+
+    100% {
+        object-position: 0 0;
+    }
+}
+
+@-moz-keyframes Appearance__reverse {
+    0% {
+        object-position: -1600px 0;
+    }
+
+    100% {
+        object-position: 0 0;
+    }
+}
+
+@keyframes Appearance__reverse {
+    0% {
+        object-position: -1600px 0;
+    }
+
+    100% {
+        object-position: 0 0;
+    }
+}
+
+
+
+.slider::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -22,7 +124,7 @@ border-radius:8px;
     top: 0;
     left: 0;
     background-image: linear-gradient(to top, rgba(47, 47, 47, 0.85) 0%, rgba(47, 47, 47, 0) 100%);
-    border-radius: 8px;
+    pointer-events: none;
 }
 
 .prev,
@@ -47,6 +149,7 @@ border-radius:8px;
 .prevIcon, .nextIcon {
     width:5px;
     height:10px;
+    color: var(--red-dark);
 }
 .prev{ 
     left:16px
@@ -56,7 +159,7 @@ border-radius:8px;
 }
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .pagination{
     display:flex;
@@ -81,17 +184,25 @@ border-radius:8px;
 .dot:hover {
     background-color: var(--red-dark);
 }
+@media screen and (max-width:1919px) {
+.slider,
+    .slides,
+    .slide,
+    .slider::after{
+        border-radius: 8px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .pagination {
             position: absolute;
         }
 }
 @media screen and (min-width:360px) and (max-width:767px){
-.slideContainer {
+    .sliderImage, .sliderImage__reverse {
         width: 330px;
         height: 200px;
     }
-
     .pagination {
         left:50%;
         bottom:-253px;
@@ -99,27 +210,30 @@ border-radius:8px;
     }
 }
 @media screen and (min-width:768px) and (max-width:1919px) {
-    .slideContainer {
-        width: 704px;
-        height: 335px;
-    }
     .pagination {
     margin-top: calc(16px - var(--paginationPadding));
+    }
+    .sliderImage, .sliderImage__reverse {
+    width:704px;
+    height:335px;    
     }
 }
 
 @media screen and (min-width:1920px) {
-.slideContainer {
-        width: 1600px;
-        height: 500px;
-    }
-.slideContainer {
+
+/* .slider{
+    width:1920px;
+} */
+
+.slider, .slides, .slide, .slider::after {
     border-radius: 20px;
 }
-.slideContainer::after {
-    border-radius:20px;
+.slides{
+    column-gap: 32px;
 }
-.slide {
+.sliderImage, .sliderImage__reverse {
+    width: 1600px;
+    height: 500px;
     border-radius: 20px;
 }
 .prev,
